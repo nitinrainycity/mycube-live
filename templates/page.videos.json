@@ -1,0 +1,269 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "0cd15923-920d-4edc-89ab-4ed2afcf0f0f": {
+      "type": "rca_support_videos",
+      "blocks": {
+        "e3a4114e-0109-4758-b1a1-08a0b90c4f47": {
+          "type": "text",
+          "settings": {
+            "video": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https:\/\/player.vimeo.com\/video\/538989449?h=720f98213a&amp;badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen=\"\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"Intro to Mycube Safe\"><\/iframe><\/div>",
+            "title": "Welcome to Mycube",
+            "content": "Scott gives an overview of MyCube safe and some of the core functionalities that make MyCube the best home safe out there."
+          }
+        },
+        "f9388acf-509b-4586-b083-d43170269943": {
+          "type": "text",
+          "settings": {
+            "video": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https:\/\/player.vimeo.com\/video\/559068272?h=f11b8a00cd&amp;badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479\/embed\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\"><\/iframe><\/div>",
+            "title": "MyCube Home Safe Installation",
+            "content": "A video describing how to use the hardware kit to securely bolt MyCube to various surfaces including using it as a wall safe for home. The video also mentions the items contained in the hardware pack."
+          }
+        },
+        "fed4ce86-1933-464c-af19-183a1869b3da": {
+          "type": "text",
+          "settings": {
+            "video": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https:\/\/player.vimeo.com\/video\/538989751?h=5c87f3f396&amp;badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen=\"\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"Reset Your Code\"><\/iframe><\/div>",
+            "title": "Reset Code",
+            "content": "This video describes how to change your personal user code, which also occurs automatically when you change the batteries. Make sure to flip the switch to change the code, and also to flip the switch on when changing the code as a result of installing new batteries."
+          }
+        },
+        "39cb92c1-f40f-415b-ab23-8127f995ca14": {
+          "type": "text",
+          "settings": {
+            "video": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https:\/\/player.vimeo.com\/video\/538989684?h=80350d3b45&amp;badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479\/embed\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\"><\/iframe><\/div>",
+            "title": "Mycube Power cord",
+            "content": "The MyCube Classic home safe (available in Blue, Orange, and Pink) features an internal charging outlet that allows users to charge electronic devices from within the safe. The power outlet has no bearing on the keypad, which is charged by 4-AA batteries."
+          }
+        },
+        "d6b8b890-9073-440f-870b-0bfab92b734b": {
+          "type": "text",
+          "settings": {
+            "video": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https:\/\/player.vimeo.com\/video\/538989554?h=898fd267bc&amp;badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479\/embed\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\"><\/iframe><\/div>",
+            "title": "Setting your code with MyCube",
+            "content": "Scott describes how to set your MyCube code when first getting started with your home safe. Out of the box, MyCube safes are programmed for individual user use, so once you set your code, you only need to press “Lock” to lock your safe."
+          }
+        },
+        "fc797516-76d9-4724-a62a-8b462ee44009": {
+          "type": "text",
+          "settings": {
+            "video": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https:\/\/player.vimeo.com\/video\/559068648?h=74f6fa3b04&amp;badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479\/embed\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\"><\/iframe><\/div>",
+            "title": "Clear Button Tip",
+            "content": "If you don’t want to see your code on the keypad, pressing the “Clear” button first will show dashes on the LED screen as opposed to numbers."
+          }
+        }
+      },
+      "block_order": [
+        "e3a4114e-0109-4758-b1a1-08a0b90c4f47",
+        "f9388acf-509b-4586-b083-d43170269943",
+        "fed4ce86-1933-464c-af19-183a1869b3da",
+        "39cb92c1-f40f-415b-ab23-8127f995ca14",
+        "d6b8b890-9073-440f-870b-0bfab92b734b",
+        "fc797516-76d9-4724-a62a-8b462ee44009"
+      ],
+      "settings": {
+        "heading": "Mycube 1st Generation",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "33d3d088-376f-4689-b420-56fd18221980": {
+      "type": "rca_support_videos",
+      "blocks": {
+        "e10ff5f6-bb9b-438b-9cbe-6be93bfc9ee6": {
+          "type": "text",
+          "settings": {
+            "video": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https:\/\/player.vimeo.com\/video\/271353511?h=4b500185f2&amp;badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479\/embed\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\"><\/iframe><\/div>",
+            "title": "Setting up Mycube",
+            "content": ""
+          }
+        },
+        "cecf01c2-95c6-4a98-8754-aa0bffc3aeae": {
+          "type": "text",
+          "settings": {
+            "video": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https:\/\/player.vimeo.com\/video\/271582727?h=aeb5d52958&amp;badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479\/embed\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\"><\/iframe><\/div>",
+            "title": "Changing User Code",
+            "content": ""
+          }
+        },
+        "0a4f3c95-a0d1-4d19-9878-d0240e1093cb": {
+          "type": "text",
+          "settings": {
+            "video": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https:\/\/player.vimeo.com\/video\/266214158?h=4d63914b84&amp;badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479\/embed\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\"><\/iframe><\/div>",
+            "title": "Changing Batteries",
+            "content": ""
+          }
+        },
+        "2220180d-45cb-421d-9e33-12135372b66c": {
+          "type": "text",
+          "settings": {
+            "video": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https:\/\/player.vimeo.com\/video\/266214186?h=d48ada92a3&amp;badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479\/embed\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\"><\/iframe><\/div>",
+            "title": "Using The Manual Key",
+            "content": ""
+          }
+        },
+        "b9761006-5f00-43b9-b1c1-db61eefe9641": {
+          "type": "text",
+          "settings": {
+            "video": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https:\/\/player.vimeo.com\/video\/271582750?h=ff6e358add&amp;badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479\/embed\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\"><\/iframe><\/div>",
+            "title": "Tips For Home Safe Installation",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "e10ff5f6-bb9b-438b-9cbe-6be93bfc9ee6",
+        "cecf01c2-95c6-4a98-8754-aa0bffc3aeae",
+        "0a4f3c95-a0d1-4d19-9878-d0240e1093cb",
+        "2220180d-45cb-421d-9e33-12135372b66c",
+        "b9761006-5f00-43b9-b1c1-db61eefe9641"
+      ],
+      "settings": {
+        "heading": "Mycube 2nd Generation",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "34b7cc7c-1022-4007-b654-dc4a94f9e8a9": {
+      "type": "rca_support_videos",
+      "blocks": {
+        "fe7fad8e-910b-467c-bd94-1819d1d3dd06": {
+          "type": "text",
+          "settings": {
+            "video": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https:\/\/player.vimeo.com\/video\/373008761?h=164ed1dea6&amp;badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479\/embed\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\"><\/iframe><\/div>",
+            "title": "Guide for Home Safe Installation",
+            "content": ""
+          }
+        },
+        "3ccbd811-c8b4-4cd6-a21b-fb7a7f2ffa66": {
+          "type": "text",
+          "settings": {
+            "video": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https:\/\/player.vimeo.com\/video\/331426297?h=20259d5b38&amp;badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479\/embed\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\"><\/iframe><\/div>",
+            "title": "Setting up Your Home Safe",
+            "content": ""
+          }
+        },
+        "bba9d2b8-8fd1-479f-b367-98ee330679c6": {
+          "type": "text",
+          "settings": {
+            "video": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https:\/\/player.vimeo.com\/video\/331476800?h=b428862279&amp;badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479\/embed\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\"><\/iframe><\/div>",
+            "title": "Changing Batteries",
+            "content": ""
+          }
+        },
+        "3f678bd0-5e58-4ec2-abfd-eb66f4cbc340": {
+          "type": "text",
+          "settings": {
+            "video": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https:\/\/player.vimeo.com\/video\/331426354?h=49027d9c4d&amp;badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479\/embed\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\"><\/iframe><\/div>",
+            "title": "Setting Code",
+            "content": ""
+          }
+        },
+        "8d6b4cf0-3a1e-482d-abac-a34ce1876727": {
+          "type": "text",
+          "settings": {
+            "video": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https:\/\/player.vimeo.com\/video\/331426271?h=b66cce8165&amp;badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479\/embed\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\"><\/iframe><\/div>",
+            "title": "Using Manual Key",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "fe7fad8e-910b-467c-bd94-1819d1d3dd06",
+        "3ccbd811-c8b4-4cd6-a21b-fb7a7f2ffa66",
+        "bba9d2b8-8fd1-479f-b367-98ee330679c6",
+        "3f678bd0-5e58-4ec2-abfd-eb66f4cbc340",
+        "8d6b4cf0-3a1e-482d-abac-a34ce1876727"
+      ],
+      "settings": {
+        "heading": "Mycube 3rd Generation",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "78f419e8-4d8a-4d11-b167-c4b62e98c6d1": {
+      "type": "rca_support_videos",
+      "blocks": {
+        "4b44ba8c-fd4a-49e4-b504-b6a959fa46d9": {
+          "type": "text",
+          "settings": {
+            "video": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https:\/\/player.vimeo.com\/video\/351103324?h=032a5581ad&amp;badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479\/embed\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\"><\/iframe><\/div>",
+            "title": "Mycube Fireproof Safe",
+            "content": "Set up and operate your fire safe"
+          }
+        }
+      },
+      "block_order": [
+        "4b44ba8c-fd4a-49e4-b504-b6a959fa46d9"
+      ],
+      "settings": {
+        "heading": "Mycube Fire Safe",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "5cc7607e-2147-455b-8788-63d9204cf0ee": {
+      "type": "rca_support_videos",
+      "blocks": {
+        "dc51d75b-d39f-4fcf-924e-16114b0f46bd": {
+          "type": "text",
+          "settings": {
+            "video": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https:\/\/player.vimeo.com\/video\/271582781?h=dcc728105a&amp;badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479\/embed\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\"><\/iframe><\/div>",
+            "title": "Welcome to Mycube",
+            "content": ""
+          }
+        },
+        "6bd16a0d-202d-4388-aa52-1a5164fb2521": {
+          "type": "text",
+          "settings": {
+            "video": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https:\/\/player.vimeo.com\/video\/266385529?h=d4c8406b22&amp;badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479\/embed\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\"><\/iframe><\/div>",
+            "title": "Customer Service",
+            "content": ""
+          }
+        },
+        "21cdcccb-8842-42ca-b48d-911b36d86734": {
+          "type": "text",
+          "settings": {
+            "video": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https:\/\/player.vimeo.com\/video\/351103374?h=16b39af952&amp;badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479\/embed\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen=\"\" frameborder=\"0\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\"><\/iframe><\/div>",
+            "title": "Mycube's NYC Milestone",
+            "content": ""
+          }
+        },
+        "84219db4-8cf5-4b90-a41b-9a7395d93501": {
+          "type": "text",
+          "settings": {
+            "video": "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https:\/\/player.vimeo.com\/video\/351103411?h=b3bc10dba1&amp;badge=0&amp;autopause=1&amp;player_id=0&amp;app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen=\"\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"The MyCube Safe Difference\"><\/iframe><\/div><script src=\"https:\/\/player.vimeo.com\/api\/player.js\"><\/script>",
+            "title": "Mycube Safe Difference",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "dc51d75b-d39f-4fcf-924e-16114b0f46bd",
+        "6bd16a0d-202d-4388-aa52-1a5164fb2521",
+        "21cdcccb-8842-42ca-b48d-911b36d86734",
+        "84219db4-8cf5-4b90-a41b-9a7395d93501"
+      ],
+      "settings": {
+        "heading": "Mycube Company Videos",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "0cd15923-920d-4edc-89ab-4ed2afcf0f0f",
+    "33d3d088-376f-4689-b420-56fd18221980",
+    "34b7cc7c-1022-4007-b654-dc4a94f9e8a9",
+    "78f419e8-4d8a-4d11-b167-c4b62e98c6d1",
+    "5cc7607e-2147-455b-8788-63d9204cf0ee"
+  ]
+}

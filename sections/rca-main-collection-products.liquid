@@ -1,0 +1,283 @@
+<link rel="stylesheet" href="{{ 'section-rca_reviews.css' | asset_url }}">
+<noscript>{{ 'section-rca_reviews.css' | asset_url | stylesheet_tag }}</noscript>
+<section class="t_br">
+  <div class="t_in">
+    <p>{{ section.settings.title }}</p>
+  </div>
+</section>
+<section class="cl_nw">
+  <div class="cl_in">
+    {% for product in collection.products %}
+      <div class="cl_col">
+        <div class="cl_img">
+          <a href="{{ product.url }}">
+            <img
+              class="fisrt_pimage-{{ product.id }}"
+              srcset="{{ product.featured_image | product_img_url: "master" }}"
+              src="{{ product.featured_image | product_img_url: "master" }}"
+              alt="{{ product.title }}"
+              loading="lazy">
+            <img
+              srcset="{{ product.images[1] | product_img_url: 'master' }}"
+              src="{{ product.images[1] | product_img_url: 'master' }}"
+              alt="{{ product.title }}"
+              loading="lazy"
+              class="on_hv">
+          </a>
+        </div>
+        <div class="tx_rt">
+          <div class="tx_in">
+            <div class="tl_wp">
+              <div class="title_reviews_rating">
+              
+              {% assign current_variant = product.selected_or_first_available_variant %}
+
+              <h4>{{ product.title | escape }}</h4>
+              <div class="ruk_rating_snippet" data-sku="{{ current_variant.sku }}"></div>
+              </div>
+              <div class="price_cust">
+                {% render 'price', product: product, price_class: '' %}
+              </div>
+            </div>
+            <div class="desc">
+            {% if product.metafields.custom.product_description_collection_page !=blank %}
+            {{ product.metafields.custom.product_description_collection_page }}
+            {% else %}
+              Unlock with a touch. Biocube takes the tried-and-true features of our classic Mycube design and seamlessly integrates our proprietary biometric safe fingerprint technology storing up to 10 unique prints.
+            {% endif %}
+            </div>
+            <div class="wp_nw">
+            <div class="new_swtch">
+            {% for option in product.options %}
+                {% if option == 'Color' %}
+                  {% assign index = forloop.index0 %}
+                 
+                  {% assign color = '' %}
+                  {% for variant in product.variants %}
+                    {% capture color %}{{ variant.options[index] }}{% endcapture %}
+                    
+                      {% comment %} <img src="{{ color | downcase | append: '.gif' | asset_url }}" alt="{{ color }}" width="16" height="16" /> {% endcomment %}
+                      <div class="swatch_new">
+                      {% if color contains ' ' %}
+                      {% assign newval = color | split: " " %}
+                      {% assign colorval = newval[1] %}
+                      {% else %}
+                      {% assign colorval = color %}
+                      {% endif %}
+                        <input class="{% if forloop.index == 1 %}checked{% endif %} radiobtn-{{ product.id }} {% if variant.available %}available{% else %}unavailabe{% endif %}" type="radio" name="swatch_cust" value="{{ color | downcase }}" data-varimg="{{ variant.image.src | img_url: 'master' }}" data-productid="{{ product.id }}" data-varid="{{ variant.id }}">
+                        <label for="{{ color }}" style="background-color:{{ colorval | downcase }};"></label>
+                      </div>
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
+              </div>
+            <div class="ct_btn">
+                <product-form>
+                    {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                      <input
+                        class="variantid-{{ product.id }}"
+                        type="hidden"
+                        name="id"
+                        value="{{ product.selected_or_first_available_variant.id }}"
+                        disabled
+                      > 
+                      <button
+                        id="{{ product_form_id }}-submit"
+                        type="submit"
+                        name="add"
+                        class="quick-add__submit button button--full-width button--secondary add_btn-{{ product.id }}""
+                        aria-haspopup="dialog"
+                        aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ product.id }}"
+                        aria-live="polite"
+                        data-sold-out-message="true"
+                        {% if product.selected_or_first_available_variant.available == false %}
+                          disabled
+                        {% endif %}
+                      >
+                        <span class="add_btn_text-{{ product.id }}">
+                          {%- if product.selected_or_first_available_variant.available -%}
+                            Add to Cart
+                          {%- else -%}
+                            {{ 'products.product.sold_out' | t }}
+                          {%- endif -%}
+                        </span>
+                        <span class="sold-out-message hidden">
+                          {{ 'products.product.sold_out' | t }}
+                        </span>
+                        <div class="loading-overlay__spinner hidden">
+                          <svg
+                            aria-hidden="true"
+                            focusable="false"
+                            role="presentation"
+                            class="spinner"
+                            viewBox="0 0 66 66"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                          </svg>
+                        </div>
+                      </button>
+                    {%- endform -%}
+                  </product-form>
+            </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% assign collection = collections[section.settings.collection] %}
+
+<section class="m_br">
+  <div class="m_in">
+    <p>{{ section.settings.btitle }}</p>
+  </div>
+</section>
+<section class="cl_nw">
+  <div class="cl_in">
+  
+    {% for product in collection.products %}
+      <div class="cl_col">
+        <div class="cl_img">
+          <a href="{{ product.url }}">
+            <img
+              class="fisrt_pimage-{{ product.id }}"
+              srcset="{{ product.featured_image | product_img_url: "master" }}"
+              src="{{ product.featured_image | product_img_url: "master" }}"
+              alt="{{ product.title }}"
+              loading="lazy">
+            <img
+              srcset="{{ product.images[1] | product_img_url: 'master' }}"
+              src="{{ product.images[1] | product_img_url: 'master' }}"
+              alt="{{ product.title }}"
+              loading="lazy"
+              class="on_hv">
+          </a>
+        </div>
+        <div class="tx_rt">
+          <div class="tx_in">
+            <div class="tl_wp">
+              <h4>{{ product.title | escape }}</h4>
+              <div class="price_cust">
+                {% render 'price', product: product, price_class: '' %}
+              </div>
+            </div>
+            <div class="desc">
+            {% if product.metafields.custom.product_description_collection_page !=blank %}
+            {{ product.metafields.custom.product_description_collection_page }}
+            {% else %}
+              Unlock with a touch. Biocube takes the tried-and-true features of our classic Mycube design and seamlessly integrates our proprietary biometric safe fingerprint technology storing up to 10 unique prints.
+            {% endif %}
+            </div>
+            <div class="wp_nw">
+            <div class="new_swtch">
+            {% for option in product.options %}
+                {% if option == 'Color' %}
+                  {% assign index = forloop.index0 %}
+                 
+                  {% assign color = '' %}
+                  {% for variant in product.variants %}
+                    {% capture color %}{{ variant.options[index] }}{% endcapture %}
+                    
+                      {% comment %} <img src="{{ color | downcase | append: '.gif' | asset_url }}" alt="{{ color }}" width="16" height="16" /> {% endcomment %}
+                      <div class="swatch_new">
+                      {% if color contains ' ' %}
+                      {% assign newval = color | split: " " %}
+                      {% assign colorval = newval[1] %}
+                      {% else %}
+                      {% assign colorval = color %}
+                      {% endif %}
+                        <input class="{% if forloop.index == 1 %}checked{% endif %} radiobtn-{{ product.id }} {% if variant.available %}available{% else %}unavailabe{% endif %}" type="radio" name="swatch_cust" value="{{ color | downcase }}" data-varimg="{{ variant.image.src | img_url: 'master' }}" data-productid="{{ product.id }}" data-varid="{{ variant.id }}">
+                        <label for="{{ color | downcase }}" style="background-color:{{ colorval | downcase }};"></label>
+                      </div>
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
+              </div>
+            <div class="ct_btn">
+                <product-form>
+                    {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                      <input
+                        class="variantid-{{ product.id }}"
+                        type="hidden"
+                        name="id"
+                        value="{{ product.selected_or_first_available_variant.id }}"
+                        disabled
+                      > 
+                      <button
+                        id="{{ product_form_id }}-submit"
+                        type="submit"
+                        name="add"
+                        class="quick-add__submit button button--full-width button--secondary add_btn-{{ product.id }}""
+                        aria-haspopup="dialog"
+                        aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ product.id }}"
+                        aria-live="polite"
+                        data-sold-out-message="true"
+                        {% if product.selected_or_first_available_variant.available == false %}
+                          disabled
+                        {% endif %}
+                      >
+                        <span class="add_btn_text-{{ product.id }}">
+                          {%- if product.selected_or_first_available_variant.available -%}
+                            {{ 'products.product.add_to_cart' | t }}
+                          {%- else -%}
+                            {{ 'products.product.sold_out' | t }}
+                          {%- endif -%}
+                        </span>
+                        <span class="sold-out-message hidden">
+                          {{ 'products.product.sold_out' | t }}
+                        </span>
+                        <div class="loading-overlay__spinner hidden">
+                          <svg
+                            aria-hidden="true"
+                            focusable="false"
+                            role="presentation"
+                            class="spinner"
+                            viewBox="0 0 66 66"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                          </svg>
+                        </div>
+                      </button>
+                    {%- endform -%}
+                  </product-form>
+            </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    {% endfor %}
+  </div>
+</section>
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{% schema %}
+  {
+    "name": "RCA Collection Products",
+    "class": "rca-featured_collection",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Top Heading"
+      },
+      {
+        "type": "text",
+        "id": "btitle",
+        "label": "Bottom Heading"
+      },
+      {
+        "type": "collection",
+        "id": "collection",
+        "label": "Bottom Collection"
+      }
+    ],
+    "presets": [
+      {
+        "name": "RCA Collection Products"
+      }
+    ]
+  }
+{% endschema %}

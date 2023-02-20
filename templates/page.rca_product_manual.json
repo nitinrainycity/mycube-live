@@ -1,0 +1,38 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "42f15638-81c9-424e-b5ca-f3d47b798f4e": {
+      "type": "rca_quiz",
+      "disabled": true,
+      "settings": {
+        "fire_product": "",
+        "tech_product": "",
+        "drawer_product": "",
+        "lock_product": "",
+        "product1": "",
+        "product2": "",
+        "product3": "",
+        "sproduct1": "",
+        "sproduct2": "",
+        "sproduct3": ""
+      }
+    },
+    "7c4dfe0b-c7a6-4018-8749-fcb6f56fc61e": {
+      "type": "rca_product_manual",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "42f15638-81c9-424e-b5ca-f3d47b798f4e",
+    "7c4dfe0b-c7a6-4018-8749-fcb6f56fc61e"
+  ]
+}

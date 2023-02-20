@@ -1,0 +1,62 @@
+{{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
+{{ 'component-product-manual.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+<div class="prd_manual_hd">
+  <div class="bread_crum">
+      <a href="">How to Use</a> <span>></span> <span>{{ page.title | escape }}</span>
+  </div>
+  <div class="prd_heading"> 
+    <h1>{{ page.title | escape }}</h1>
+  </div>
+</div>
+{% assign image = page.metafields.custom.how_to_use_image | img_url:'master' %}
+{% assign p_manual_link = page.metafields.custom.product_manual_link %}
+{% assign i_manual_link = page.metafields.custom.installation_manual_link %}
+{% assign video_link = page.metafields.custom.how_to_videos_link %}
+{% if image %}
+<div class="image-with-text image-with-text--no-overlap page-width isolate collapse-corners section-template--17630367973662__e22bbc1a-719f-4648-a113-14ba790e9006-padding">
+  <div class="image-with-text__grid grid grid--gapless grid--1-col grid--2-col-tablet">
+    
+    <div class="image-with-text__media-item image-with-text__media-item--medium image-with-text__media-item--middle grid__item">
+      <div class="image-with-text__media image-with-text__media--adapt gradient color-background-2 global-media-settings media" style="padding-bottom: 83.69791666666667%;">
+        <img src="{{ image }}" alt="how-to-image" srcset="{{ image  }}" width="1500" height="1255" loading="lazy" sizes="(min-width: 1200px) 550px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)">
+      </div>
+    </div>
+   
+    <div class="image-with-text__text-item grid__item">
+      <div id="ImageWithText--template--17630367973662__e22bbc1a-719f-4648-a113-14ba790e9006" class="image-with-text__content image-with-text__content--middle image-with-text__content--desktop-center image-with-text__content--mobile-left image-with-text__content--adapt gradient color-background-2 content-container">
+        {% if p_manual_link !=blank %}<a target ="_blank" href="{{ p_manual_link }}" class="button button--primary"> Product Manual </a>{% endif %}
+        {% if i_manual_link !=blank %}<a target ="_blank" href="{{ i_manual_link }}" class="button button--primary"> Installation Manual </a>{% endif %}
+        {% if video_link !=blank %}<a href="{{ video_link }}" class="button button--primary"> How-To Videos </a>{% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+{% schema %}
+{
+  "name": "RCA Product Manual",
+  "class": "section rca_product_manual",
+  "settings": [
+    
+  ],
+  "presets": [
+    {
+      "name": "RCA Product Manual"
+    }
+  ]
+}
+{% endschema %}

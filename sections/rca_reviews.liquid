@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="{{ 'section-rca_reviews.css' | asset_url }}">
+<noscript>{{ 'section-rca_reviews.css' | asset_url | stylesheet_tag }}</noscript>
+<script src="https://widget.reviews.io/rich-snippet-reviews-widgets/dist.js" type="text/javascript"></script>
+<div id="compound-widget"></div>
+
+<script>
+        richSnippetReviewsWidgets("compound-widget", {
+            store: "mycubesafe.com",
+            primaryClr: "#00510a",
+            neutralClr: "#333333",
+            reviewTextClr: "#333333",
+            widgetName: "compound",
+            layout: "fullWidth",
+            numReviews: 40,
+            contentMode: "company;third-party",
+            compound: "google local",
+            css: ".CompoundWidget * {font-family: Wigrum, sans-serif !important;} .RatingStars__star { font-family: reviews-widget-icons !important;}"
+        });
+</script>
+ 
+{% schema %}
+  {
+    "name": "Rca Reviews",
+    "settings": [
+    ],
+    "presets": [
+      {
+        "name": "Rca Reviews",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}

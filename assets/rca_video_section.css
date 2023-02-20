@@ -1,0 +1,130 @@
+.rca_video_data{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 48px;
+}
+.rca_video_details {
+    padding: 72px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.rca_videos_section:last-child {
+    padding-bottom: 72px;
+}
+.rca_video_heading {
+    display: block;
+    width: 100%;
+}
+.rca_videos_section{
+    background-color: #fcfaf6;
+}
+.rca_video_heading h2 {
+    font-size: 45.6px;
+    line-height: 1.2;
+    font-family: 'Wigrum';
+    font-weight: 400;
+    margin-bottom: 48px;
+    letter-spacing: 0px;
+    margin-top: 0px;
+}
+.rca_video_block h3 {
+    font-size: 28.8px;
+    line-height: 1.2;
+    letter-spacing: 0px;
+    font-family: 'Wigrum';
+    font-weight: 400;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    color: #000;
+}
+.rca_video_block p {
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: 0px; 
+    font-family: 'Wigrum';
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #000;
+}
+@media only screen and (max-width: 1800px){
+    .rca_video_details {
+        padding: 60px;
+        padding-bottom: 0;
+    }
+    .rca_videos_section:last-child {
+        padding-bottom: 60px;
+    }
+    .rca_video_data{
+        gap:40px;
+    }
+    .rca_video_heading h2 {
+        font-size: 38px;
+        margin-bottom: 40px;
+    }
+    .rca_video_block h3 {
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .rca_video_block p {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 960px){
+    .rca_video_details {
+        padding: 40px;
+        padding-bottom: 0;
+        width:100%;
+    }
+    .rca_videos_section:last-child {
+        padding-bottom: 40px;
+    }
+    .rca_video_data{
+        gap:20px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .rca_video_heading h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .rca_video_block h3 {
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .rca_video_block p {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .rca_video_details {
+        padding:60px 40px;
+        padding-bottom: 0;
+        width:100%;
+    }
+    .rca_videos_section:last-child {
+        padding-bottom: 100px;
+    }
+    .rca_video_data{
+        gap:40px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .rca_video_heading h2 {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+    .rca_video_block h3 {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .rca_video_block p {
+        font-size: 16px;
+    }
+}

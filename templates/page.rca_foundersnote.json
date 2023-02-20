@@ -1,0 +1,132 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-founder-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "2921087a-1403-49bb-91e1-32ff10ce9ea4": {
+      "type": "rca_founders_image_with_text",
+      "blocks": {
+        "template--17502575100190__2921087a-1403-49bb-91e1-32ff10ce9ea4-16732507912f1ac6cb-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Meet Lois & Scott",
+            "heading_size": "h1"
+          }
+        },
+        "template--17502575100190__2921087a-1403-49bb-91e1-32ff10ce9ea4-16732507912f1ac6cb-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For three generations, we’ve been helping people take charge of the way they organize their lives. Mycube brings together today’s smart home safe design, and an empowered approach to personal organization in every product we create. This is the future of safekeeping and we’re thrilled to lead the way.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--17502575100190__2921087a-1403-49bb-91e1-32ff10ce9ea4-16732507912f1ac6cb-0",
+        "template--17502575100190__2921087a-1403-49bb-91e1-32ff10ce9ea4-16732507912f1ac6cb-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/medium_api_mycubesafe_com_1026802604814438_c6c3f9c87f.jpg",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "58abaeeb-311d-46a7-a131-da05c94ca52b": {
+      "type": "rca_founders_quote",
+      "blocks": {
+        "125943c9-8b7f-4bdc-a2ee-6b2ae1216988": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>“Safekeeping isn’t just for security, it can provide a transformative sense of calm.”<\/p>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "125943c9-8b7f-4bdc-a2ee-6b2ae1216988"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 72,
+        "padding_bottom": 72
+      }
+    },
+    "0d6e5e71-aa03-40dd-b481-3dfeb749535d": {
+      "type": "rca_founders_message",
+      "blocks": {
+        "template--17502575100190__0d6e5e71-aa03-40dd-b481-3dfeb749535d-16732592508831ce94-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>A Message from our founders<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--17502575100190__0d6e5e71-aa03-40dd-b481-3dfeb749535d-16732592508831ce94-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At the heart of our company, we believe that everyone deserves a home where everything vital has a place. With Mycube, we’re dedicated to designing beautiful high-quality products for secure home organization. From old love letters to new business plans, passports to pearls, Mycube home safes and accessories provide the best safekeeping solution that not only does the job, but looks just as good doing it. Built with a customer-first mindset and our double lifetime guarantee, we’re thrilled to be a part of helping you live every day with Mycube.<\/p><p>– Lois Krasilovsky and Scott Annan<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17502575100190__0d6e5e71-aa03-40dd-b481-3dfeb749535d-16732592508831ce94-0",
+        "template--17502575100190__0d6e5e71-aa03-40dd-b481-3dfeb749535d-16732592508831ce94-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "ff4e51df-bb36-45f4-852a-87750bc7bd0c": {
+      "type": "rca_founders_pick",
+      "settings": {
+        "image_lg": "shopify:\/\/shop_images\/medium_Scott_web_9c8ca34408.jpg",
+        "heading_text": "Scott's Pick",
+        "image": "shopify:\/\/shop_images\/xlarge_10_Biocube_Blue_Classic_010_copy_6c086f7768.jpg",
+        "desktop_image_position": "right",
+        "custom_text_body": "<p>\"In building Mycube, I looked to develop beautiful products that inspire people to live their best lives. Great products should incorporate smart design and empathy for the customer experience. The Biocube design is as striking to me today as it was the first time I developed it. Every time I use mine, it just makes me smile.\"<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "#"
+      }
+    },
+    "19d1d2ed-44d1-47e6-b881-81e4566a2e94": {
+      "type": "rca_founders_pick",
+      "settings": {
+        "image_lg": "shopify:\/\/shop_images\/medium_api_mycubesafe_com_1026841058456937_582e31ac05.jpg",
+        "heading_text": "Lois's Pick",
+        "image": "shopify:\/\/shop_images\/xlarge_15_My_Cube_Fire_White_010_copy_recrop_e9292c4990_82937734-ad23-4e24-9eb7-485526b32802.jpg",
+        "desktop_image_position": "left",
+        "custom_text_body": "<p>\"My father always delivered on his promise of quality and reliability, never wavering from his commitment to those who trusted him to protect their wares. The Firecube is the embodiment of my father’s values and the qualities we uphold as family founders. Sturdy, respected, always by your side.\"<\/p>",
+        "button_label": "Shop Now",
+        "button_link": "#"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "2921087a-1403-49bb-91e1-32ff10ce9ea4",
+    "58abaeeb-311d-46a7-a131-da05c94ca52b",
+    "0d6e5e71-aa03-40dd-b481-3dfeb749535d",
+    "ff4e51df-bb36-45f4-852a-87750bc7bd0c",
+    "19d1d2ed-44d1-47e6-b881-81e4566a2e94"
+  ]
+}

@@ -1,0 +1,144 @@
+/* new css 1/19/2023 */
+.rca_product_manual .image-with-text .grid{
+    background-color: #fcfaf6;
+}
+.rca_product_manual .image-with-text__media-item {
+    width: 50%;
+}
+.rca_product_manual .image-with-text__text-item.grid__item {
+    width: 50%;
+    padding: 120px 0px;
+}
+.rca_product_manual .image-with-text {
+    padding: 0px;
+}
+
+.rca_product_manual a.button.button--primary {
+    width: 45%;
+    margin: 24px auto;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    background-color: #b0beaf;
+    color: #000;
+    height: 120px;
+    font-size: 24px;
+    border-radius: 5px;
+    font-family: 'Wigrum';
+    letter-spacing: 0px;
+}
+
+.rca_product_manual .image-with-text__content {
+    padding: 0;
+    row-gap: 24px;
+}
+
+.rca_product_manual a.button.button--primary:hover {
+    background-color: #144039;
+    color: #fcfaf6;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.rca_product_manual .prd_heading h1{
+    font-size: 33.6px;
+    line-height: 40px;
+    color: #000;
+    padding: 12px 36px;
+    margin: 0px;
+    font-family: 'Wigrum';
+    font-weight: 400;
+}
+
+.rca_product_manual .bread_crum{
+    font-size: 19.2px;
+    color: #000;
+    padding: 12px 36px;
+    line-height: 26px;
+    font-family: 'Wigrum';
+    font-weight: 400;
+}
+.rca_product_manual .bread_crum a{
+    color: #000;
+    text-decoration: none;
+}
+.rca_product_manual .prd_manual_hd {
+    padding: 36px;
+}
+.rca_product_manual .bread_crum span:nth-child(2) {
+    margin: 0px 24px;
+    font-size: 24px;
+    line-height: 33px;
+}
+@media only screen and (max-width: 1800px){
+    .rca_product_manual .bread_crum span:nth-child(2) {
+        margin: 0 20px;
+        font-size: 20px;
+    }
+    .rca_product_manual .image-with-text__text-item.grid__item {
+        padding: 100px 0;
+    }
+    .rca_product_manual .prd_heading h1{
+        font-size: 28px;
+        line-height: 33px;
+        padding: 10px 30px;
+    }
+    .rca_product_manual .bread_crum {
+        font-size: 16px;
+        padding: 10px 30px;
+    }
+    .rca_product_manual .prd_manual_hd {
+        padding: 30px;
+    }
+    .rca_product_manual .image-with-text__content {
+        row-gap: 20px;
+    }
+    .rca_product_manual a.button.button--primary {
+        height: 100px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .rca_product_manual .prd_heading h1 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .rca_product_manual .image-with-text__media-item {
+        width: 100%;
+    }
+    .rca_product_manual .image-with-text__text-item.grid__item {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .rca_product_manual .prd_manual_hd {
+        padding: 30px 15px;
+    }
+    .rca_product_manual .bread_crum {
+        font-size: 12px;
+        padding: 10px 2px;
+    }
+    .rca_product_manual .prd_heading h1 {
+        font-size: 18px;
+        line-height: 26px;
+        padding: 10px 2px;
+    }
+    .rca_product_manual .bread_crum span:nth-child(2) {
+        margin: 0 10px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .rca_product_manual a.button.button--primary {
+        height: 60px;
+        font-size: 16px;
+        width: 60%;
+    }
+    .rca_product_manual .image-with-text__content {
+        row-gap: 0px;
+    }
+    .rca_product_manual .image-with-text__text-item.grid__item {
+        padding: 30px 0;
+    }
+}

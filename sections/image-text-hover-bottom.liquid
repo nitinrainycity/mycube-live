@@ -1,0 +1,101 @@
+{% assign bannerimg = product.metafields.custom.number_banner2_image %}
+{% assign number = product.metafields.custom.banner2_number %}
+{% assign numberval = number | split: "," %}
+
+<section class="img_hv img_hv_btm_section">
+    <div class="sec_in">
+      {% if bannerimg %}
+        <div class="img_ct">
+            <img src="{{ bannerimg | img_url :'master' }}" alt="banner1">
+        </div>
+      {% endif %}
+        <div class="btn_gp">
+           {% for numbers in numberval %}
+           {% assign index = forloop.index %}
+           {% capture text %}banner2_number_text{{index}}{% endcapture %}
+           {% assign texts = product.metafields.custom[text] %}
+            {% if numbers %}
+            <button>
+              {% if numbers %}<span>{{ numbers }}</span>{% endif %}
+              {% if texts %}
+                <div class="dt_hv">
+                    <p>{{ texts }}</p>
+                </div>
+             {% endif %}
+            </button>
+          {% endif %}
+           {% endfor %}
+        </div>
+    </div>
+</section>
+{% comment %} Position For Desktop {% endcomment %}
+{% assign top1 = product.metafields.custom.banner2_number1_top %}
+{% assign left1 = product.metafields.custom.banner2_number1_left %}
+{% assign top2 = product.metafields.custom.banner2_number2_top %}
+{% assign left2 = product.metafields.custom.banner2_number2_left %}
+{% assign top3 = product.metafields.custom.banner2_number3_top %}
+{% assign left3 = product.metafields.custom.banner2_number3_left %}
+{% assign top4 = product.metafields.custom.banner2_number4_top %}
+{% assign left4 = product.metafields.custom.banner2_number4_left %}
+{% comment %} End Position For Desktop {% endcomment %}
+
+{% comment %} Position For Mobile {% endcomment %}
+{% assign mob_top1 = product.metafields.custom.banner2_number1_top_mobile %}
+{% assign mob_left1 = product.metafields.custom.banner2_number1_left_mobile %}
+{% assign mob_top2 = product.metafields.custom.banner2_number2_top_mobile %}
+{% assign mob_left2 = product.metafields.custom.banner2_number2_left_mobile %}
+{% assign mob_top3 = product.metafields.custom.banner2_number3_top_mobile %}
+{% assign mob_left3 = product.metafields.custom.banner2_number3_left_mobile %}
+{% assign mob_top4 = product.metafields.custom.banner2_number4_top_mobile %}
+{% assign mob_left4 = product.metafields.custom.banner2_number4_left_mobile %}
+{% comment %} End Position For Mobile {% endcomment %}
+
+<style>
+  .img_hv_btm_section .btn_gp button:nth-child(1) {
+    top: {{ top1 }}%;
+    left: {{ left1 }}%;
+   }
+  .img_hv_btm_section .btn_gp button:nth-child(2) {
+    top: {{ top2 }}%;
+    left: {{ left2 }}%;
+   }
+  .img_hv_btm_section .btn_gp button:nth-child(3) {
+    top: {{ top3 }}%;
+    left: {{ left3 }}%;
+   }
+  .img_hv_btm_section .btn_gp button:nth-child(4) {
+    top: {{ top4 }}%;
+    left: {{ left4 }}%;
+  }
+  @media only screen and (max-width: 959px){
+    .img_hv_btm_section .btn_gp button:nth-child(1) {
+      top: {{ mob_top1 }}%;
+      left: {{ mob_left1 }}%;
+    }
+    .img_hv_btm_section .btn_gp button:nth-child(2) {
+      top: {{ mob_top2 }}%;
+      left: {{ mob_left2 }}%;
+    }
+    .img_hv_btm_section .btn_gp button:nth-child(3) {
+      top: {{ mob_top3 }}%;
+      left: {{ mob_left3 }}%;
+    }
+    .img_hv_btm_section .btn_gp button:nth-child(4) {
+      top: {{ mob_top4 }}%;
+      left: {{ mob_left4 }}%;
+    }
+  }
+</style>
+{% schema %}
+    {
+      "name": "Details Box Bottom",
+      "settings": [
+       ],
+      "presets": [
+        {
+          "name": "Details box Bottom",
+          "category": "Custom"
+        }
+      ]
+    }
+  {% endschema %}

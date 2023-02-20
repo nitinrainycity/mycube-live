@@ -1,0 +1,189 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "bc924027-87ea-4de9-b07b-b5db5279d265": {
+      "type": "faq_main",
+      "blocks": {
+        "64a2bafd-0ea1-4faa-9edd-2494ce1a408d": {
+          "type": "text",
+          "settings": {
+            "title": "What are Mycube, Biocube and Mini safes made of?",
+            "content": "<p>Mycube, Mycube Mini, and Biocube and Biocube Mini home safes are made of one-eighth-inch (1⁄8”) thick steel.<\/p>"
+          }
+        },
+        "311bd13a-4df3-4148-b4c9-0719819b0768": {
+          "type": "text",
+          "settings": {
+            "title": "How do I open the door when I take Mycube out of the box?",
+            "content": "<p>Each MyCube door is secured by fabric or a plastic door cover to prevent the door from opening during shipping and when being taken out of the box. If the door doesn't open readily, just give the keypad a pull and the door will open. <\/p>"
+          }
+        },
+        "9f51fd45-5893-4bd4-ae03-7cfa07926b3b": {
+          "type": "text",
+          "settings": {
+            "title": "How do I open Mycube if the batteries in the digital keypad run out?",
+            "content": "<p>Mycube comes with a manual override key that can be used to open the safe if the batteries need to be replaced. It's important to replace the batteries once every 12 months, and to keep the keys outside of the safe. Our Firecube safe has batteries on the outside of the safe and does not come with a manual key.<\/p>"
+          }
+        },
+        "35f326c6-5c4b-4274-a50f-9ed48ff9de4a": {
+          "type": "text",
+          "settings": {
+            "title": "How do I secure Mycube?",
+            "content": "<p>Mycube, Mycube Mini, Biocube, and iCube home safes come with a self-installation bolt kit that includes eight (8) screws and washers, and that works with most small power drills. There are four holes on both the bottom and back of all Mycube safes where you may fasten Mycube to the surface of your choice. A home safe installation diagram and video are located on our website in the How to Use section under each product type.<\/p>"
+          }
+        },
+        "113f3df2-61a9-4fe9-8ef6-f798f72902ff": {
+          "type": "text",
+          "settings": {
+            "title": "What are Mycube and Biocube best used for?",
+            "content": "<p>Our home safes are best used for urban living, apartment buildings, homes, hotels, offices, and dormitories. Mycube is best suited to protect valuables, keep your items organized and locked up, and keep your valuables out of sight from people who access your home. The biocube line is perfect for customers wanting the benefits of the Mycube but with efficient biometric safe fingerprint access.<\/p>"
+          }
+        },
+        "da0b2045-8b7e-45b3-914e-d8d7b89e749f": {
+          "type": "text",
+          "settings": {
+            "title": "How many trays fit in each of your Mycube safes?",
+            "content": "<p>Our accessory trays are stackable, and you can store up to 4 trays in the Mycube and Mini safes, and the Biocube and Biocube Mini safes. Two on the floor and two on the shelf. The Firecube safe can store one Fire-safe sized tray in pullout drawer and up to 3 on the bottom of the safe. The Firecube is the only safe that can fit just the Fire safe tray (the other trays will NOT fit in the Firecube.) Whereas the Mycube and Biocube safes can accommodate any style accessory tray - including the Fire Safe tray. <\/p>"
+          }
+        },
+        "854c5ad0-fd37-4481-8f45-74b51b65fd25": {
+          "type": "text",
+          "settings": {
+            "title": "Do the jewelry safe trays work in all the Mycube safes?",
+            "content": "<p>Our 7Mix, single space, and 6V accessory jewelry safe trays fit in the Mycube, Mini, Biocube, and iCube safes. You can fit up to 4 trays in each. The Firecube only accommodates our fire safe tray, and also features an internal pull out tray for storing valuables and documents. The Firecube can fit one Fire Safe tray in the pull out tray, and up to 3 trays on the bottom stacked.<\/p>"
+          }
+        },
+        "327757dc-6d9e-4fbe-8b93-997298bc9dc0": {
+          "type": "text",
+          "settings": {
+            "title": "Does the standard Mycube safe have a fire rating?",
+            "content": "<p>There is no fire rating on the Mycube, Mycube, Biocube, or iCube safes. Our Firecube fireproof safe has certified one hour fire protection at 1700 degrees and is a commercial-grade fire protection safe.<\/p>"
+          }
+        },
+        "ffe8011e-cd6d-4fde-b8a1-8d0d5fa76144": {
+          "type": "text",
+          "settings": {
+            "title": "How long is the fire rating for the Mycube fire safe?",
+            "content": "<p>The Firecube fireproof safe is certified for protection against fire for 1 hour at 1700 degrees fahrenheit.<\/p>"
+          }
+        },
+        "fe5ff4d4-f3af-4752-9ba3-704d9038c0aa": {
+          "type": "text",
+          "settings": {
+            "title": "What happens if I lose my manual key?",
+            "content": "<p>You will need to contact us at 800-590-1592 or support@mycubesafe.com and we can walk you through the steps of securing a replacement key in a safe way that verifies proof of ownership. It's important to register your key on our site through the registration link at the top right corner of our site. <\/p>"
+          }
+        },
+        "2bdb8f30-4ab5-4bb0-b81c-5e757f50c2c7": {
+          "type": "text",
+          "settings": {
+            "title": "How does the internal outlet work on the Mycube 1st generation safes?",
+            "content": "<p>Certain original version Mycubes come with a power cord outside the safe that can be plugged into any electrical outlet. Electronics may then be plugged into the single internal outlet and charged inside the safe. The power cord has NO bearing on the digital lock, so in the case of a power outage, the digital keypad will continue to function normally – as long as the batteries have charge.<\/p>"
+          }
+        },
+        "612ac9d6-764d-489a-bd7c-abec6a3aae53": {
+          "type": "text",
+          "settings": {
+            "title": "What is the purpose of the usb port on the side of the keypad?",
+            "content": "<p>The USB port is designed to be used for hotel and commercial property use. It may also be used as an access point to charge up a home safe with an external battery pack if the batteries have run out. <\/p>"
+          }
+        },
+        "63dd0cd5-6865-428f-babf-cbafe7cdc0ab": {
+          "type": "text",
+          "settings": {
+            "title": "What if I need to change my code?",
+            "content": "<p>On our 1st and 2nd Generation Mycube safes, the inside of the back door jamb of the safe, there is a black switch that controls the power to the keypad. This switch is on the inside left when looking at the battery pack. Flip this switch off and then on. Your code is now cleared, and you can reset your code. For our newer 3rd generation safes including the Biocube, see our How to Use Videos section for setting your code.<\/p>"
+          }
+        },
+        "770ab70f-455c-40ad-934c-f35de84028f3": {
+          "type": "text",
+          "settings": {
+            "title": "How long do the batteries in the keypad last?",
+            "content": "<p>The batteries typically last 18-24 months, but we recommend replacing the batteries every 12 months just to be safe. All Mycube, Mycube Mini, Biocube, and Firecube safes take 4AA batteries.<\/p>"
+          }
+        },
+        "69983693-896b-4def-ba28-404c6ce0ea2a": {
+          "type": "text",
+          "settings": {
+            "title": "Where is the battery pack located?",
+            "content": "<p>The battery pack is located on the back inside door of the safe. It is concealed by the black plastic cover, which can be opened by using the allen wrench that comes with each safe. Newer models do not require an allen wrench, and just pop off with the clip. The Firecube fireproof safe has a battery pack that is located on the front of the door to the right of the keypad.<\/p>"
+          }
+        },
+        "a2578b98-cca2-45d5-bfdc-cdcd94de043a": {
+          "type": "text",
+          "settings": {
+            "title": "What is the size of the allen wrench?",
+            "content": "<p>We have two types of wrenches that work in our Mycube and Mycube Mini safes. One is a 3mm allen wrench. The other is a T25 Torx key. The proper wrench comes with each safe. If you need to get another, look at the screw top to see which shape it is, and the screw that has 6 flat sides is an allen wrench. The one that looks more like a starfish is the T25 Torx key.<\/p>"
+          }
+        },
+        "44d4ebc8-0d22-496e-a2c9-ed7eb55b56c7": {
+          "type": "text",
+          "settings": {
+            "title": "What if I lose the operating manual that comes with the safe?",
+            "content": "<p>In the How to Use section of our website under HELP, you may select the safe that you have and follow the buttons to view the operating manuals of each safe. We feature each safe's operating manual on our website.<\/p>"
+          }
+        },
+        "6c428668-bca0-4804-ba81-27938e2b12aa": {
+          "type": "text",
+          "settings": {
+            "title": "What's the difference between Mycube and Biocube?",
+            "content": "<p>Our Mycube line of safes features our traditional push-button keypad and one push-button locking. The Biocube line features a touchscreen keypad that hides the code, and a biometric safe fingerprint sensor that allows you to store up to 10 unique fingerprints. The Mycube is our update take on a classic safe, whereas our Biocube integrates our proprietary tocuhscreen and fingerprint access technology.<\/p>"
+          }
+        },
+        "82004fa0-b324-4fd1-92f3-e47d05d94872": {
+          "type": "text",
+          "settings": {
+            "title": "How many iCube safes can I connect per account?",
+            "content": "<p>You can connect multiple iCube safes within one account. Once you create an account, you can add multiple users so that a family member, for example, can access the safe with you. If you purchase two or more iCube safes, you can go to the Settings &gt; Safes in the app, and click the \"+\" sign to add additional iCube safes. <\/p>"
+          }
+        },
+        "6662b94e-a666-4888-a11c-6492f7a402ba": {
+          "type": "text",
+          "settings": {
+            "title": "Do Mycube safes have a UL rating?",
+            "content": "<p>Mycube safes do not carry a UL rating. Our Firecube fireproof safe is certified for one-hour fire protection and has received a UL-equivalent one hour fire rating, but it is not UL. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "64a2bafd-0ea1-4faa-9edd-2494ce1a408d",
+        "311bd13a-4df3-4148-b4c9-0719819b0768",
+        "9f51fd45-5893-4bd4-ae03-7cfa07926b3b",
+        "35f326c6-5c4b-4274-a50f-9ed48ff9de4a",
+        "113f3df2-61a9-4fe9-8ef6-f798f72902ff",
+        "da0b2045-8b7e-45b3-914e-d8d7b89e749f",
+        "854c5ad0-fd37-4481-8f45-74b51b65fd25",
+        "327757dc-6d9e-4fbe-8b93-997298bc9dc0",
+        "ffe8011e-cd6d-4fde-b8a1-8d0d5fa76144",
+        "fe5ff4d4-f3af-4752-9ba3-704d9038c0aa",
+        "2bdb8f30-4ab5-4bb0-b81c-5e757f50c2c7",
+        "612ac9d6-764d-489a-bd7c-abec6a3aae53",
+        "63dd0cd5-6865-428f-babf-cbafe7cdc0ab",
+        "770ab70f-455c-40ad-934c-f35de84028f3",
+        "69983693-896b-4def-ba28-404c6ce0ea2a",
+        "a2578b98-cca2-45d5-bfdc-cdcd94de043a",
+        "44d4ebc8-0d22-496e-a2c9-ed7eb55b56c7",
+        "6c428668-bca0-4804-ba81-27938e2b12aa",
+        "82004fa0-b324-4fd1-92f3-e47d05d94872",
+        "6662b94e-a666-4888-a11c-6492f7a402ba"
+      ],
+      "settings": {
+        "title": "",
+        "content": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "bc924027-87ea-4de9-b07b-b5db5279d265"
+  ]
+}

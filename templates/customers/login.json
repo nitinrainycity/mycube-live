@@ -1,0 +1,15 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-login",
+      "settings": {
+        "img_login": "shopify:\/\/shop_images\/Classic_Grey_Angle_Open_a2fe55002e.jpg",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

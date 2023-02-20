@@ -1,0 +1,60 @@
+<section class="featured-collection">
+  {% if section.settings.title != blank %}
+    <h2 class="featured-collection__title">{{ section.settings.title | escape }}</h2>
+  {% endif %}
+
+  {%- assign collection = collections[section.settings.coll] -%}
+  <div class="swiper-container rca-feat-colletion">
+    <div class="swiper-wrapper">
+      {% for product in collection.products %}
+        <div class="swiper-slide rca_product_items">
+          {% if product.featured_image != blank %}
+            <div class="featured-collection__image">
+              <img src="{{ product.featured_image | product_img_url: "master" }}" alt="{{ product.title }}">
+            </div>
+          {% endif %}
+          <div class="rca_text_set">
+            <div class="rca_price_title">
+              <h3 class="rca_p_title">{{ product.title | escape }}</h3>
+              {% render 'price', product: product, price_class: '' %}
+            </div>
+            <div class="featured-collection-item">
+              <a href="{{ product.url }}">Shop now</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <!-- next / prev arrows -->
+    <div class="swiper-button-next feat_next" style="display:flex;"></div>
+    <div class="swiper-button-prev feat_prev" style="display:flex;"></div>
+    <!-- !next / prev arrows -->
+
+    <!-- pagination dots -->
+    <div class="swiper-pagination"></div>
+    <!-- !pagination dots -->
+  </div>
+</section>
+{% schema %}
+{
+  "name": "RCA Featured Collection",
+  "class": "rca-featured_collection",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "collection",
+      "id": "coll",
+      "label": "Collection"
+    }
+  ],
+  "presets": [
+    {
+      "name": "RCA Featured Collection"
+    }
+  ]
+}
+{% endschema %}

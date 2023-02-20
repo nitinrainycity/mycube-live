@@ -1,0 +1,82 @@
+<section class="rca_founder_pick">
+    <div class="founder_pick_wp {{ section.settings.desktop_image_position }}">
+        <div class="img_lt">
+            <img src="{{ section.settings.image_lg | img_url: 'master' }}">
+        </div>
+        <div class="tex_rt">
+            <div class="tex_in">
+                <h4>{{ section.settings.heading_text }}</h4>
+                <div class="prd_img_tex">
+                    <div class="img_prd">
+                        <img src="{{ section.settings.image | img_url: 'master' }}">
+                    </div>
+                     <div class="prd_tex">
+                        {{ section.settings.custom_text_body }}
+                    </div>
+                    <a href="{{ section.settings.button_link }}">{{ section.settings.button_label }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% schema %}
+  {
+    "name": "Rca Founders Pick",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image_lg",
+            "label": "Image"
+        },
+        {
+            "type": "text",
+            "id": "heading_text",
+            "label": "Heading Text"
+          },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        },
+      {
+        "type": "select",
+        "id": "desktop_image_position",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "left",
+        "label": "Image Position"
+      },
+      {
+        "id": "custom_text_body",
+        "type": "richtext",
+        "label": "Add custom text below",
+        "default": "<p>Add your text here</p>"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "default": "Button label",
+        "label": "Button Text"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button Link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Rca Founders Pick",
+        "category": "Custom" 
+      }
+    ]
+  }
+{% endschema %}

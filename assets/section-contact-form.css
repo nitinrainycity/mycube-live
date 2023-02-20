@@ -1,0 +1,326 @@
+.contact img {
+  max-width: 100%;
+}
+
+.contact .form__message {
+  align-items: flex-start;
+}
+
+.contact .icon-success {
+  margin-top: 0.2rem;
+}
+
+.contact .field {
+  margin-bottom: 1.5rem;
+}
+.rca_contact_contain {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.rca_contact {
+  width: 100%;
+  max-width: 840px;
+  display: inline-block;
+}
+.rca_right_link {
+  flex: 0 0 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.rca_contact_page {
+  padding: 72px;
+  background-color: #fcfaf6;
+}
+.field__input, .customer .field input {
+  min-height: 60px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #000;
+  font-size: 24px;
+  line-height: 1;
+  font-family: 'Wigrum';
+  font-weight: 300;
+  color: #000;
+  letter-spacing: 0;
+}
+.field__label, .customer .field label {
+  display: none;
+}
+.field__input::-webkit-input-placeholder { /* Edge */
+  opacity: 1;
+}
+
+.field__input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  opacity: 1;
+}
+
+.field__input::placeholder {
+  opacity: 1;
+}
+.rca_contact .field__input:focus,
+.rca_contact .field__input:not(:placeholder-shown),
+.rca_contact .field__input:-webkit-autofill,
+.rca_contact .customer .field input:focus,
+.rca_contact .customer .field input:not(:placeholder-shown),
+.rca_contact .customer .field input:-webkit-autofill{
+  padding: 1.5rem;
+  margin: 0;
+  border-radius: 5px;
+}
+.rca_contact .contact__fields{
+  grid-column-gap: 30px;
+}
+.rca_contact_page .rca_contact .field{
+  margin-bottom:30px;
+}
+.rca_contact_page textarea.text-area.field__input {
+  min-height: 228px;
+}
+.contact__button button {
+  width: 100%;
+  min-height: 60px;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 500;
+  color:#000;
+  letter-spacing: 0;
+}
+.contact__button {
+  margin-top:30px !important;
+}
+.contact__button button:hover {
+  color: #fff;
+  background-color: #144039;
+}
+.rca_contact_page h2.title {
+  font-size: 45.6px;
+  font-family: 'Wigrum';
+  letter-spacing: 0;
+  margin-bottom: 48px;
+}
+.rca_contact_page{
+  letter-spacing: 0;
+}
+.rca_rl_content h4,
+.rca_need_help h4 {
+  font-size: 27px;
+  font-family: 'Wigrum';
+  font-weight: 400;
+  margin-bottom: 18px;
+  margin-top: 0px;
+  letter-spacing: 0;
+}
+.rca_rl_content p, .rca_rl_content p a {
+  font-size: 24px;
+  color: #000;
+  font-weight: 300;
+  margin: 0px 0px;
+  line-height: initial;
+  letter-spacing: 0;
+}
+.rca_need_help a{
+  font-size: 24px;
+  color: #000;
+  font-weight: 300;
+  margin: 0px 0px;
+  line-height: initial;
+  display: block;
+  text-decoration: none;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  letter-spacing: 0;
+}
+.rca_rl_data {
+  margin-bottom: 40px;
+}
+.rca_rl_data:last-child {
+  border-top: 1px solid #000;
+  padding-top: 48px;
+  width: 100%;
+  max-width: 263px;
+}
+@media screen and (min-width: 750px) {
+  .contact .field {
+    margin-bottom: 2rem;
+  }
+}
+
+.contact__button {
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 750px) {
+  .contact__button {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .contact__fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .rca_contact_page {
+    padding: 60px;
+  }
+  .rca_contact_page h2.title{
+    margin-bottom:40px;
+    font-size:38px;
+  }
+  .rca_contact{
+    max-width:700px;
+  }
+  .field__input, .customer .field input{
+    min-height: 50px;
+    font-size:20px;
+  }
+  .rca_contact .contact__fields {
+    grid-column-gap: 25px;
+  }
+  .rca_contact_page .rca_contact .field {
+    margin-bottom: 25px;
+  }
+  .field__input, .customer .field input{
+    padding:.5em;
+  }
+  .contact__button button{
+    min-height: 53px;
+    font-size: 20px;
+    letter-spacing: .05em;
+    border-radius: 7px;
+  }
+  .rca_rl_content h4, .rca_need_help h4{
+    font-size: 22.5px;
+    margin-bottom: 15px;
+  }
+  .rca_rl_content p, .rca_rl_content p a{
+    font-size:20px;
+    font-weight: 400;
+  }
+  .rca_need_help a{
+    font-size:20px;
+    margin-bottom:10px;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 1200px){
+  .rca_contact_contain{
+    flex-direction: column;
+  }
+  .rca_contact {
+    max-width: 100%;
+  }
+  .rca_right_link{
+    margin-top:30px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .rca_contact_page {
+    padding: 40px;
+  }
+  .rca_contact_page h2.title{
+    margin-bottom:40px;
+    font-size:32px;
+  }
+  .field__input, .customer .field input{
+    min-height: 50px;
+    font-size:20px;
+  }
+  .rca_contact .contact__fields {
+    grid-column-gap: 25px;
+  }
+  .rca_contact_page .rca_contact .field {
+    margin-bottom: 25px;
+  }
+  .field__input, .customer .field input{
+    padding:.5em;
+  }
+  .contact__button button{
+    min-height: 53px;
+    font-size: 20px;
+    letter-spacing: .05em;
+    border-radius: 7px;
+  }
+  .rca_rl_content h4, .rca_need_help h4{
+    font-size: 22.5px;
+    margin-bottom: 15px;
+  }
+  .rca_rl_content p, .rca_rl_content p a{
+    font-size:20px;
+    font-weight: 400;
+  }
+  .rca_need_help a{
+    font-size:20px;
+    margin-bottom:10px;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 600px) {
+  .rca_contact_page {
+    padding: 20px;
+  }
+  .rca_contact_page h2.title{
+    margin-bottom:20px;
+    font-size:28px;
+  }
+  .field__input, .customer .field input{
+    min-height: 40px;
+    max-height: 40px;
+    font-size:16px;
+  }
+  .rca_contact .contact__fields {
+    grid-column-gap: 10px;
+  }
+  .rca_contact_page .rca_contact .field {
+    margin-bottom: 20px;
+  }
+  .field__input, .customer .field input{
+    padding:.5em;
+  }
+  .contact__button button{
+    min-height: 53px;
+    font-size: 20px;
+    letter-spacing: .05em;
+    border-radius: 7px;
+  }
+  .rca_rl_content h4, .rca_need_help h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .rca_rl_content p, .rca_rl_content p a{
+    font-size:15px;
+    font-weight: 400;
+  }
+  .rca_need_help a{
+    font-size:15px;
+    margin-bottom:10px;
+    font-weight: 400;
+  }
+  .rca_contact_page textarea.text-area.field__input {
+    min-height: 222px;
+  }
+  .contact__button {
+    margin-top: 20px !important;
+  }
+  .rca_right_link {
+    margin: 40px 0px 20px;
+    height: 400px;
+    flex-wrap: wrap;
+  }
+  .rca_rl_data:last-child{
+    border-top: none;
+    padding-top: 0;
+    border-top: none;
+    padding-top: 0;
+    padding-left: 20px;
+    max-width: unset;
+  }
+  .rca_rl_data{
+    width:50%;
+  }
+}

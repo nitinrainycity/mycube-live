@@ -1,0 +1,138 @@
+button.rca_faq_button {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    text-align: left;
+    padding: 0px 0px 36px;
+    font-size: 28.8px;
+    line-height:1.2;
+    font-family: 'Wigrum';
+    color: #000000;
+    cursor: pointer;
+    letter-spacing: 0;
+    position: relative;
+    display: grid;
+    -webkit-tap-highlight-color: transparent; /* for removing the highlight */
+    grid-template-columns: 80% 1fr;
+    justify-content: space-between;
+    background-color: transparent;
+}  
+.accordion-content {
+    padding: 0 0px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+.rca_faq_details button.rca_faq_button span{
+    display: block;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    right: 0px;
+    top: calc(50% - 25px);
+}
+.rca_faq_details button.rca_faq_button span:before{
+    content: "";
+    width: 30px;
+    height: 1px;
+    border-radius: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 6px;
+    transform: rotate(90deg);
+    transition: all .3s ease-in-out;
+}
+.rca_faq_details button.rca_faq_button span:after{
+    content: "";
+    width: 30px;
+    height: 1px;
+    border-radius: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 6px;
+    transition: all .3s ease-in-out;
+}
+.rca_faq_details button.rca_faq_button.is-open span:before {
+    transform: rotate(135deg);
+}
+.rca_faq_details button.rca_faq_button.is-open span:after {
+    transform: rotate(45deg);
+}
+.rca_faq_main {
+    padding: 72px;
+    width: 100%;
+    background-color: #fcfaf6;
+}
+.rca_faq_row {
+    display: grid;
+    row-gap: 36px;
+    grid-auto-rows: min-content;
+    align-items: end;
+    width: 100%;
+}
+.accordion-content p {
+    font-size: 24px;
+    color: #000;
+    font-family: 'Wigrum';
+    letter-spacing: 0;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 48px;
+}
+@media screen and (max-width: 1800px) {
+    .rca_faq_main{
+        padding:60px;
+    }
+    button.rca_faq_button{
+        font-size: 24px;
+        padding-bottom:30px;
+    }
+    .accordion-content p{
+        font-size: 20px;
+        padding-bottom:40px;
+    }
+    .rca_faq_row{
+        row-gap:30px;
+    }
+    .rca_faq_details button.rca_faq_button span:after,
+    .rca_faq_details button.rca_faq_button span:before{
+        width:25px;
+    }
+    .rca_faq_details button.rca_faq_button span{
+        top: calc(50% - 22px);
+    }
+}
+@media screen and (max-width: 960px){
+    button.rca_faq_button{
+        font-size: 22px;
+        padding-bottom:30px;
+    }
+    .accordion-content p{
+        font-size: 20px;
+        padding-bottom:40px;
+    }
+}
+@media screen and (max-width: 600px){
+    .rca_faq_main{
+        padding:40px 20px;
+    }
+    button.rca_faq_button{
+        font-size: 18px;
+        padding-bottom:30px;
+    }
+    .accordion-content p{
+        font-size: 16px;
+        padding-bottom:40px;
+    }
+    .rca_faq_row{
+        row-gap:30px;
+    }
+    .rca_faq_details button.rca_faq_button span:after,
+    .rca_faq_details button.rca_faq_button span:before{
+        width:25px;
+    }
+    .rca_faq_details button.rca_faq_button span{
+        top: calc(50% - 22px);
+    }
+}

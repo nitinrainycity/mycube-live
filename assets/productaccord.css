@@ -1,0 +1,332 @@
+button.course-accordion {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-family: 'Wigrum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45.6px;
+    line-height: 54px;
+    letter-spacing: 0.02em;
+    background-color: transparent;
+    padding: 36px 48px;
+    position: relative;
+    color: #222;
+}
+
+/*button not active*/
+button.course-accordion:after {
+    content: '\002B';
+    color: #0039A6;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    padding-right:0px;
+}
+
+/* minus button */
+button.course-accordion.active:after {
+    content: "\2212";
+}
+.faq_page_main button.course-accordion:after{
+    font-size:32px;
+}
+div.course-panel {
+    padding: 0 24px 0px 48px;
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    width: 100%;
+    font-family: 'Akrobat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    border-bottom: 1px solid #0039A6;
+}
+.color_tabs div.course-panel{
+    transition: max-height .8s ease-out;
+}
+.faq_page_main div.course-panel{
+    font-size: 17px;
+    line-height: 23px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.course-panel p {
+    font-family: 'Wigrum';
+    font-size: 19.2px;
+    line-height: 26px;
+    margin-bottom: 48px !important;
+    font-weight: 400;
+    color: #000;
+}
+.faqs_data {
+    display: block;
+    width: 50%;
+    border-right: 1px solid #000;
+    background-color: #e5dcd3;
+}
+.faqs_details_heading {
+    padding: 36px 48px;
+    border-bottom:1px solid #000;
+}
+.faqs_details_heading h4 {
+    margin: 0px;
+    font-weight: 400;
+    font-family: 'Wigrum';
+    font-size: 33.6px;
+    line-height: 40px;
+}
+.faqs_details_contenttext p {
+    margin: 0px;
+    font-size: 24px;
+    line-height: 33px;
+    padding: 36px 48px;
+    color: #000;
+    font-weight: 300;
+}
+.faqs_data button.course-accordion:after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    margin-left: 0;
+    padding-right: 0px;
+    font-size: 0px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background-image: url(//cdn.shopify.com/s/files/1/0696/1545/2446/files/right-chevron.png?v=1672237449);
+    background-size: 20px;
+    background-position: 8px 7px;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 24px;
+    top: calc(50% - 18px);
+}
+.faqs_data .course-panel a:after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+    padding-right: 0px;
+    font-size: 0px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background-image: url(//cdn.shopify.com/s/files/1/0696/1545/2446/files/right-chevron.png?v=1672237449);
+    background-size: 20px;
+    background-position: 8px 7px;
+    background-repeat: no-repeat;
+}
+.faqs_data button.course-accordion.active:after {
+    background-image: url(//cdn.shopify.com/s/files/1/0696/1545/2446/files/cancel.png?v=1672237424);
+    border: none;
+}
+.course-panel a {
+    display: block;
+    width: 100%;
+    min-height: 36px;
+    font-size: 24px;
+    line-height: 33px;
+    font-family: 'Wigrum';
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 24px;
+    text-decoration: none;
+}
+.course-panel a img {
+    display: none;
+    position: fixed;
+}
+.course-panel a:hover img {
+    display: block;
+    right: 0;
+    top: 138px;
+    width: 50%;
+    height: 100%;
+    max-height: calc(100vh - 138px);
+    object-fit: cover;
+}
+.faq-container {
+    position: relative;
+    background-color: #e5dcd3;
+}
+@media screen and (max-width: 767px){
+  .faq-imageblock__second{
+    display: none;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1440px){
+    .faqs_details_heading h4{
+        font-size:28px;
+    }
+    button.course-accordion{
+        font-size: 38px;
+        line-height: 34px;
+    }
+    .faqs_data button.course-accordion:after{
+        background-size: 16px;
+        background-position: 7px 6px;
+        width: 30px;
+        height: 30px;
+        top:calc(50% - 14px);
+    }
+    .course-panel p{
+        font-size: 16px;
+        line-height: 1.4;
+        margin-top:0px;
+    }
+    .course-panel a:after {
+        display: none;
+    }
+    .course-panel a {
+        display: inline-flex;
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .faqs_data{
+        width: 100%;
+    }
+    .faqs_details_heading h4{
+        font-size: 24px;
+    }
+    button.course-accordion{
+        font-size:32px;
+    }
+    .faqs_details_heading {
+        padding: 29px 40px;
+    }
+    .faqs_details_contenttext p{
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    
+    .course-panel div a img {
+        display: block !important;
+        position: relative;
+        max-width: 100%;
+        object-fit: cover;
+        height: 180px;
+        width: 100%;
+    }
+    .faqs_data .course-panel a:after{
+        display:none;
+    }
+    .course-panel div a {
+        width: calc(50% - 10px);
+        display: inline-block;
+        margin-bottom: 0px;;
+    }
+    .course-panel div {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .course-panel a{
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    .course-panel a span {
+        display: block;
+        margin-top: 10px;
+    }
+    div.course-panel div{
+        padding-bottom:20px;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    .faqs_data{
+        width: 100%;
+    }
+    .faqs_details_heading h4{
+        font-size: 22px;
+    }
+    button.course-accordion{
+        font-size: 28px;
+        padding: 10px 20px;
+    }
+    .faqs_details_heading {
+        padding: 12px 20px;
+    }
+    .faqs_details_contenttext p{
+        font-size: 16px;
+        line-height: 1.4;
+        padding:20px 20px;
+    }
+    .faqs_data button.course-accordion:after {
+        content: '\002B';
+        font-weight: bold;
+        float: right;
+        margin-left: 0;
+        padding-right: 0px;
+        font-size: 0px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid #000;
+        background-image: url(//cdn.shopify.com/s/files/1/0696/1545/2446/files/right-chevron.png?v=1672237449);
+        background-size: 10px;
+        background-position: 5px 4px;
+        background-repeat: no-repeat;
+        transform: rotate(90deg);
+        position: absolute;
+        right: 24px;
+        top: calc(50% - 9px);
+    }
+    .course-panel div a img {
+        display: block !important;
+        position: relative;
+        max-width: 100%;
+        object-fit: cover;
+        height: 118px;
+        width: 100%;
+    }
+    .faqs_data .course-panel a:after{
+        display:none;
+    }
+    .course-panel div a {
+        width: calc(50% - 10px);
+        display: inline-block;
+        margin-bottom: 0px;;
+    }
+    .course-panel div {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .course-panel a{
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    .course-panel a span {
+        display: block;
+        margin-top: 10px;
+    }
+    div.course-panel div{
+        padding-bottom:20px;
+    }
+    div.course-panel{
+        padding:0px 20px;
+    }
+    .course-panel p {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-top: 0px;
+        margin-bottom: 20px !important;
+    }
+    .rca_fpi_contain img{
+        height: 62.7rem;
+    }
+}

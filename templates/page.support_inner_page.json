@@ -1,0 +1,61 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "111441a1-f530-46df-a3c7-01c01070bb69": {
+      "type": "rca_tabs_and_accordian",
+      "blocks": {
+        "73fcb28b-95ef-433d-8f28-8cde58bd6f63": {
+          "type": "text",
+          "settings": {
+            "title": "Cannot Open Your Safe"
+          }
+        },
+        "f18fd4d5-3868-48a2-86cc-21ffb309f574": {
+          "type": "text",
+          "settings": {
+            "title": "Setting Up Your Safe"
+          }
+        },
+        "8216bf40-eedc-4f6e-8891-64d58ce49e36": {
+          "type": "text",
+          "settings": {
+            "title": "Operating Your Safe"
+          }
+        },
+        "c2fdcecd-ba18-4fa5-9f23-f0aac2141b2c": {
+          "type": "text",
+          "settings": {
+            "title": "Troubleshooting"
+          }
+        },
+        "f198043c-a1ce-4315-88f6-b0ab4d012e12": {
+          "type": "text",
+          "settings": {
+            "title": "Maintenance"
+          }
+        }
+      },
+      "block_order": [
+        "73fcb28b-95ef-433d-8f28-8cde58bd6f63",
+        "f18fd4d5-3868-48a2-86cc-21ffb309f574",
+        "8216bf40-eedc-4f6e-8891-64d58ce49e36",
+        "c2fdcecd-ba18-4fa5-9f23-f0aac2141b2c",
+        "f198043c-a1ce-4315-88f6-b0ab4d012e12"
+      ],
+      "settings": {
+        "stitle": "Choose a topic"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "111441a1-f530-46df-a3c7-01c01070bb69"
+  ]
+}

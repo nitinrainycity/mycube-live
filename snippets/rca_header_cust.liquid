@@ -1,0 +1,586 @@
+<style>
+  header.header.header--middle-left {
+    max-width: 100%;
+    grid-template-columns: 1fr 9fr 1fr;
+    column-gap: 0rem;
+    padding: 10px 20px;
+  }
+  .img_rollover{
+    background-size: cover;
+    background-position: center;
+  }
+  .small-mega_menu{
+    padding: 20px 40px;
+  }
+  header .link_list{
+    {% comment %} margin-top: 34px; {% endcomment %}
+    top: var(--header-height)
+  }
+  .menu_cust {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .menu_cust ul {
+    list-style: none;
+    display: flex;
+    column-gap: 72px;
+    margin: 0px;
+    height: 134%;
+  }
+  .menu_cust ul > li{
+    display: flex;
+    {% comment %} align-items: flex-end; {% endcomment %}
+  }
+  .menu_cust ul li a {
+    font: 1.92rem 'Wigrum';
+    line-height: 1.4;
+    color: #160f16;
+    text-decoration: none;
+    font-weight: 300;
+    margin-bottom: 0;
+    transition: opacity 0.5s;
+    letter-spacing: 0px;
+  }
+  .menu_cust ul li a:hover{
+    opacity: 0.5;
+  }
+  .menu_cust ul li a.top-level-item,
+  .menu_cust ul li a.top-level__child-item{
+    font-weight: 400;
+  }
+
+  .menu_cust ul li a.top-level-item{
+    text-transform: uppercase;
+    align-self: flex-end;
+    margin-bottom: 30px;
+    display: inline-block;
+  }
+
+  .mg_drp {
+    position: fixed;
+    {% comment %} height: 100%; {% endcomment %}
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    background: #e5dcd3;
+    z-index: 111;
+    display: none;
+    opacity: 0;
+    transition: all 0.4s;
+    top: var(--nav-height);
+  }
+  .mg_col_lg {
+    display: flex;
+  }
+  .mg_col_lg .mg_col:last-child {
+    border-right: none;
+    transition: all 0.4s;
+  }
+  .mg_col_lg .mg_col {
+    border: 1px solid #000;
+    border-right: 0px;
+    width: 50px;
+    min-width: 50px;
+    padding: 30px;
+    position: relative;
+  }
+  .mg_col.sb_menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 2rem;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    width: 30%;
+  }
+  .mg_col_lg .mg_col:last-child {
+    width: calc(70% - 50px);
+  }
+  .mn_sub_col ul {
+    display: block;
+    padding: 0px;
+  }
+  .mn_sub_col h2 {
+    margin: 0px;
+    color: #000;
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+  .mn_sub_col ul li {
+    padding: 0px !important;
+  }
+  .mn_sub_col ul li a {
+    text-transform: capitalize;
+    line-height: 1.4;
+  }
+  .mg_col_lg .mg_col .lbl_col {
+    transform: rotate(-90deg);
+    color: #222;
+  }
+  .mg_col_lg .mg_col .lbl_col p {
+    margin: 0px;
+  }
+  .mg_col_lg .mg_col:first-child {
+    padding: 30px 0px;
+  }
+  .mn_sub_col h2 span {
+    font-size: 1.4rem;
+    display: block;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+  }
+  .header {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .mg_col_lg:last-child .mg_col {
+    border-top: none;
+  }
+  .mg_col_lg .tex_in {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: max-content;
+    bottom: 0px;
+    margin: auto;
+    font-size: 2rem;
+    color: #222;
+    font-weight: 400;
+    text-align: center;
+    max-width: 470px;
+  }
+  details-modal.header__search {
+    display: none !important;
+  }
+  .mn_sub_col ul li {
+    margin-bottom: 5px;
+    line-height: 24px;
+  }
+  li.has_sub {
+    transition: all 0.4s;
+    {% comment %} display: flex;
+    align-items: flex-end; {% endcomment %}
+  }
+  li.has_sub > a:after {
+    content: url("data:image/svg+xml,%3Csvg width='12px' height='8px' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15.29 10.82'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none;stroke:%23160f16;stroke-linecap:round;stroke-miterlimit:10;stroke-width:1.5px;%7D%3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cpolyline class='cls-1' points='14.54 0.75 7.59 9.61 0.75 0.83'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    display: inline-block;
+    margin-left: 10px;
+    transition: transform 0.5s;
+  }
+  li.has_sub:hover a:after {
+    transform: rotateX(-180deg);
+  }
+
+  li.has_sub:hover .mg_drp {
+    display: block;
+    opacity: 1;
+  }
+  svg.icon.icon-cart path {
+    fill: #000;
+  }
+  svg.icon.icon-cart {
+    fill: #000;
+  }
+  .cart-count-bubble span {
+    font-size: 12px;
+    color: #fff;
+  }
+  .cart-count-bubble {
+    background: #b0bdb0;
+    top: 7px;
+    width: 20px;
+    height: 20px;
+  }
+  .link_list {
+    position: absolute;
+    background: #e5dcd3;
+    width: 100%;
+    left: 0;
+    display: none;
+    justify-content: center;
+    opacity: 0;
+  }
+  li.has_sub:hover .link_list {
+    display: flex;
+    opacity: 1;
+  }
+  li.has_sub:hover .link_list a {
+    text-transform: capitalize;
+  }
+  .mn_rt li.has_sub .link_list {
+    justify-content: flex-end;
+    padding-right: 100px !important;
+  }
+  .mg_col_lg .mg_col:last-child .tex_in a {
+    position: relative;
+  }
+  svg.cart-icon g#b {
+    fill: transparent;
+    stroke: #000;
+  }
+/* new css 1/18/2023 */
+  .mg_col.img_rollover {
+    background-color: transparent !important;
+  }
+  .mg_col_lg .mg_col:last-child:hover {
+  background-color: #b0bdb0;
+  }
+  .mg_col_lg:last-child .mg_col:first-child .lbl_col p {
+    margin-top: 25px;
+  }
+  .mg_col_lg:first-child {
+    height: 60vh;
+  }
+  .mg_col_lg:last-child {
+    height: calc(40vh - 100px);
+  }
+/*new css 24-01-2023 */
+  .announcement-bar__message {
+    font-size: 16.8px;
+  }
+  .header .header__heading-link {
+    padding: 0px 0px 0px;
+    margin: 10px 8px 0px;
+    width: 100%;
+    max-width: 140px;
+}
+
+  header.header.header--middle-left {
+      padding: 13px 40px 12px;
+  }
+  .mn_lt {
+    padding-top: 7px;
+  }
+  .header__icons {
+    align-items: center;
+  }
+  .header .header__icon--cart svg {
+      height: 33.5px !important;
+  }
+  .mn_rt ul {
+    padding-right: 72px;
+    column-gap: 96px;
+  }
+  .cart-count-bubble span {
+      font-size: 14.4px;
+      color: #144039;
+  }
+  .cart-count-bubble {
+      width: 23px;
+      height: 23px;
+  }
+  li.has_sub > a:after {
+      vertical-align: text-bottom;
+  }
+
+  .mg_col_lg:last-child .mg_col .tex_in {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+.mg_col_lg:last-child .mg_col .tex_in a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    column-gap: 16px;
+}
+  @media only screen and (max-width: 1800px){
+    .menu_cust ul li a{
+     font-size: 16px;
+     letter-spacing: 0px;
+    }
+      .mg_col.sb_menu {
+        width: 33%;
+    }
+    .mg_col_lg .mg_col:last-child .tex_in a {
+      font-size: 22px;
+    }
+    .announcement-bar__message {
+      font-size: 14px;
+    }
+    .menu_cust ul {
+      column-gap: 60px;
+    }
+      .header .header__heading-link {
+      margin: 10px 0px 0px;
+      max-width: 120px;
+    }
+    .mn_rt ul {
+        padding-right: 60px;
+        column-gap: 80px;
+    }
+      .header .header__icon--cart svg {
+      height: 28.5px !important;
+    }
+    .cart-count-bubble span {
+        font-size: 12px;
+    }
+      .cart-count-bubble {
+        width: 20px;
+        height: 20px;
+    }
+    header.header.header--middle-left {
+        padding: 8px 40px 7px;
+    }
+  }
+
+  @media only screen and (max-width: 1031px) {
+    .menu_cust {
+      display: none;
+    }
+    .header h1.header__heading {
+     width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 600px){
+      .announcement-bar__message {
+      font-size: 10px;
+      line-height: 14px;
+      text-align: left;
+    }
+    header.header.header--middle-left {
+        padding: 8px 20px 7px;
+    }
+    .header .header__heading-link {
+      margin: 15px 0px 15px;
+      max-width: 100px;
+    }
+    .header__heading-logo {
+        max-width: 100px;
+    }
+    header-drawer {
+      align-items: center;
+      display: flex;
+    }
+      .header__icon span {
+        width: 30px;
+        margin: auto;
+        margin-right: 0px;
+    }
+    .cart-count-bubble {
+      left: 12px;
+      top: -3px;
+  }
+    .cart-count-bubble span {
+        justify-content: center !important;
+    }
+    .header__icon:not(.header__icon--summary), .header__icon span {
+        justify-content: flex-end;
+    }
+      .header h1.header__heading {
+      max-width: inherit;
+    }
+    .header__icon, .header__icon--cart .icon {
+        height: 2.4rem;
+        width: 2.4rem;
+        margin-left: 15px;
+    }
+  }
+</style>
+
+<div class="menu_cust">
+  <div class="mn_lt">
+    <ul>
+      {% for link in section.settings.menu.links %}
+        <li class="{% if link.links != blank or link.title == 'SHOP' %}has_sub{% endif %}">
+          <a class="top-level-item" href="{{ link.url }}">{{ link.title | escape }}</a>
+          {% for block in section.blocks %}
+            {% if block.settings.megamenu contains link.title %}
+              <div class="mg_drp">
+                <div class="mg_col_lg">
+                  <div class="mg_col">
+                    <div class="lbl_col">
+                      <p>Safes</p>
+                    </div>
+                  </div>
+                  <div class="mg_col sb_menu">
+                    <div class="mn_sub_col">
+                      <h2>
+                        {{ block.settings['smenu-first'] | capitalize | replace: '-', ' ' }}
+                        <span>{{ block.settings.s_subhead1 }}</span>
+                      </h2>
+                      <ul>
+                        {% for link in block.settings['smenu-first'].links %}
+                          {% assign handle = link.url | remove: '/products/' %}
+                          {% assign product = all_products[handle] %}
+                          <li>
+                            <a class="megaMenuItem" data-img="{{ product.featured_media | image_url }}" href="{{ link.url }}">{{ link.title | escape }}</a>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+
+                    <div class="mn_sub_col">
+                      <h2>
+                        {{ block.settings['smenu-second'] | capitalize | replace: '-', ' ' }}
+                        <span>{{ block.settings.s_subhead2 }}</span>
+                      </h2>
+                      <ul>
+                        {% for link in block.settings['smenu-second'].links %}
+                          {% assign handle = link.url | remove: '/products/' %}
+                          {% assign product = all_products[handle] %}
+                          <li>
+                            <a class="megaMenuItem" data-img="{{ product.featured_media | image_url }}" href="{{ link.url }}">{{ link.title | escape }}</a>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+
+                    <div class="mn_sub_col">
+                      <h2>
+                        {{ block.settings['smenu-third'] | capitalize | replace: '-', ' ' }}
+                        <span>{{ block.settings.s_subhead3 }}</span>
+                      </h2>
+                      <ul>
+                        {% for link in block.settings['smenu-third'].links %}
+                          {% assign handle = link.url | remove: '/products/' %}
+                          {% assign product = all_products[handle] %}
+                          <li>
+                            <a class="megaMenuItem" data-img="{{ product.featured_media | image_url }}" href="{{ link.url }}">{{ link.title | escape }}</a>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+
+                    <div class="mn_sub_col">
+                      <h2>
+                        {{ block.settings['smenu-fourth'] | capitalize | replace: '-', ' ' }}
+                        <span>{{ block.settings.s_subhead4 }}</span>
+                      </h2>
+                      <ul>
+                        {% for link in block.settings['smenu-fourth'].links %}
+                          {% assign handle = link.url | remove: '/products/' %}
+                          {% assign product = all_products[handle] %}
+                          <li>
+                            <a class="megaMenuItem" data-img="{{ product.featured_media | image_url }}" href="{{ link.url }}">{{ link.title | escape }}</a>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="mg_col img_rollover">
+                    <div class="tex_in">Hover over products on the left to display product image</div>
+                    {% comment %} <div class="img_wp">
+                      <img src="" alt="">
+                    </div> {% endcomment %}
+                  </div>
+                </div>
+                <div class="mg_col_lg">
+                  <div class="mg_col">
+                    <div class="lbl_col">
+                      <p>Lifestyle</p>
+                    </div>
+                  </div>
+                  <div class="mg_col sb_menu">
+                    <div class="mn_sub_col">
+                      <h2>
+                        {{ block.settings['lmenu-first'] | capitalize | replace: '-', ' ' }}
+                        <span>{{ block.settings.l_subhead1 }}</span>
+                      </h2>
+                      <ul>
+                        {% for link in block.settings['lmenu-first'].links %}
+                          {% assign handle = link.url | remove: '/products/' %}
+                          {% assign product = all_products[handle] %}
+                          <li>
+                            <a class="megaMenuItem" data-img="{{ product.featured_media | image_url }}" href="{{ link.url }}">{{ link.title | escape }}</a>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+
+                    <div class="mn_sub_col">
+                      <h2>
+                        {{ block.settings['lmenu-second'] | capitalize | replace: '-', ' ' }}
+                        <span>{{ block.settings.l_subhead2 }}</span>
+                      </h2>
+                      <ul>
+                        {% for link in block.settings['lmenu-second'].links %}
+                          {% assign handle = link.url | remove: '/products/' %}
+                          {% assign product = all_products[handle] %}
+                          <li>
+                            <a class="megaMenuItem" data-img="{{ product.featured_media | image_url }}" href="{{ link.url }}">{{ link.title | escape }}</a>
+                          </li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="mg_col">
+                    <div class="tex_in">
+                          {% for link in block.settings['lmenu-third'].links %}
+                          {% assign handle = link.url | remove: '/products/' %}
+                          {% assign product = all_products[handle] %}
+                      <a href="{{ link.url }}">{{ link.title | escape }}
+                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 9.5H17M17 9.5L9.98413 1M17 9.5L9.98413 18" stroke="black"/>
+                        </svg>
+                      </a>
+                     {% endfor %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+          {% if link.links != blank %}
+            <div class="link_list small-mega_menu">
+              <ul>
+                {% for childlink in link.links %}
+                  <li>
+                    <a class="top-level__child-item" href="{{ childlink.url }}"> {{ childlink.title | escape }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="mn_rt">
+    <ul>
+      {% for link in section.settings['menu-rights'].links %}
+        <li class="{% if link.links != blank %}has_sub{% endif %}">
+          <a class="top-level-item" href="{{ link.url }}">{{ link.title | escape }}</a>
+
+          {% if link.links != blank %}
+            <div class="link_list small-mega_menu">
+              <ul>
+                {% for childlink in link.links %}
+                  <li>
+                    <a class="top-level__child-item" href="{{ childlink.url }}"> {{ childlink.title | escape }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+        </li>
+      {% endfor %}
+      <li>
+        <a
+          class="top-level-item"
+          href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}"
+        >
+          {% if customer %}Account{% else %}Log in / Register{% endif %}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<script>
+  (function(){
+    document.querySelectorAll('.megaMenuItem').forEach((item) => {
+      item.addEventListener('mouseover', () => {
+        let img = item.dataset.img;
+        document.querySelector('.img_rollover').style.backgroundImage = "url('"+ img +"')";
+        document.querySelector('.img_rollover .tex_in').style.opacity = 0;
+      });
+      item.addEventListener('mouseout', () => {
+        document.querySelector('.img_rollover').style.backgroundImage = "url()";
+        document.querySelector('.img_rollover .tex_in').style.opacity = 1;
+      });
+    })
+  })();
+</script>

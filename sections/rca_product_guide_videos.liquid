@@ -1,0 +1,44 @@
+{{ 'section_product_guide_videos.css' | asset_url | stylesheet_tag }}
+<section class="rca_product_guide_vid">
+    <div class="guide_wp">
+        <div class="guide_header">
+            <h1>{{ page.metafields.custom.video_page_top_heading }}</h1>
+        </div>
+        <div class="guide_vid_wp">
+          {% assign headingbycomma = page.metafields.custom.video_heading_comma_separated_ %}
+          {% assign headings = headingbycomma | split:"," %}
+          {% for headingnew in headings %}
+            {% capture value %}video_url{{ forloop.index }}{% endcapture %}
+            {% assign video = page.metafields.custom[value] %}
+            <div class="guide_vid_col">
+                <div class="vid_header">
+                    <h2>{{ headingnew }}</h2>
+                </div>
+                <div class="vid_cont">
+                    <iframe allow="fullscreen" frameborder="0"  src="{{ video }}" data-ready="true"></iframe>
+                </div>
+            </div>
+            {% endfor %}
+            
+            
+        </div>
+    </div>
+</section>
+
+{% schema %} 
+{
+    "name": "RCA Product Guide Video",
+    "class": "rca_product_guide_vid",
+    "settings": [
+
+    ],
+    "blocks": [
+
+  ],
+    "presets": [
+        {
+            "name": "RCA Product Guide Video"
+        }
+    ]
+}
+{% endschema %}

@@ -1,0 +1,18 @@
+   <div class="ta_container">
+    <div class="ta_accordion v2">
+      {% for i in (1..7) %}
+        {% capture heading %}troubleshooting_accordian_heading{{ i }}{% endcapture %}
+        {% capture content %}troubleshooting_accordian_content{{ i }}{% endcapture %}
+        {% assign head = page.metafields.custom[heading] %}
+        {% assign cont = page.metafields.custom[content] %}
+        {% if head !=blank %}
+        <div class="a-container">
+        <p class="a-btn">{{ head }} <span></span></p>
+        <div class="a-panel">
+          {{ cont }}
+         </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div> 

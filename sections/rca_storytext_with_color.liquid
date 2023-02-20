@@ -1,0 +1,111 @@
+
+<section >
+	<div class="rtc-main" style ="background:{{ section.settings.bgcolor | color_modify: 'alpha', section.settings.opacity }};">
+		<div class="rtc-container">
+			<div class="rtc_data rtc-text{{ section.settings.pos }}">
+                {% if section.settings.heading != blank %}
+                    <h2>{{ section.settings.heading }}</h2>
+                {% endif %}
+                {% if section.settings.image1 != blank %}
+                    <div class="rtc-top">
+                        <img src ="{{ section.settings.image1 | img_url :'master' }}" alt="{% if block.settings.image.alt != blank %}{{ block.settings.image.alt }}{% else %}Budcraft{% endif %}">
+                    </div>
+                {% endif %}
+                {% if section.settings.smallheading != blank %}
+                    <h3>{{ section.settings.smallheading }}</h3>
+                {% endif %}
+                {% if section.settings.content != blank %}
+                    <p>{{ section.settings.content }}</p>
+                {% endif %}
+			</div> 
+		</div>
+	</div>
+</section>
+<style>
+    #shopify-section-{{ section.id }} .rtc_data h2 {
+        color:{{ section.settings.hdcolor }};
+    }
+    #shopify-section-{{ section.id }} .rtc_data p,#shopify-section-{{ section.id }} .rtc_data h3 {
+        color:{{ section.settings.ctcolor }};
+    }
+</style>
+{% schema %}
+{
+    "name": "RCA Story Text",
+    "class": "rca-storytext",
+    "settings": [
+        {
+            "type": "color",
+            "id": "bgcolor",
+            "label": "Section Background Color",
+            "default": "#FFFFFF"
+		},
+        {
+            "type": "color",
+            "id": "hdcolor",
+            "label": "Heading Color",
+            "default": "#000000"
+		},
+        {
+            "type": "color",
+            "id": "ctcolor",
+            "label": "Content Color",
+            "default": "#211217"
+		},
+        {
+            "type":      "range",
+            "id":        "opacity",
+            "min":        0,
+            "max":        1,
+            "step":       0.1,
+            "label":     "Opacity",
+            "default":   0
+        },
+        {
+            "type": "image_picker",
+            "id": "image1",
+            "label": "Image"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+        },
+        {
+            "type": "text",
+            "id": "smallheading",
+            "label": "Sub Heading"
+        },
+        {
+            "type": "html",
+            "id": "content",
+            "label": "Content"
+        },
+        {
+        "type": "select",
+        "id": "pos",
+        "options": [
+            {
+                "value": "left",
+                "label": "Left"
+            },
+            {
+                "value": "right", 
+                "label": "Right"
+            },
+            {
+                "value": "center",
+                "label": "Center"
+            }
+        ],
+            "default": "center",
+            "label": "Text Position"
+        }
+    ],
+    "presets": [
+        {
+            "name": "RCA Rich Text"
+        }
+    ]
+}
+{% endschema %}

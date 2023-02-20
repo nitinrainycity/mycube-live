@@ -1,0 +1,148 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "199c021b-1e11-4b40-a15a-c3bc3ce0b528": {
+      "type": "rca_storytext_with_color",
+      "settings": {
+        "bgcolor": "#f8f6f2",
+        "hdcolor": "#000000",
+        "ctcolor": "#211217",
+        "opacity": 1,
+        "image1": "shopify:\/\/shop_images\/Drafting_Safe_075ec87493.png",
+        "heading": "Our Story",
+        "smallheading": "We transform the way you store the things you love with our thoughtful design.",
+        "content": "",
+        "pos": "center"
+      }
+    },
+    "ec61ae0a-865b-4bf1-a969-9d0c06aa72c3": {
+      "type": "rca_storytext_with_color",
+      "settings": {
+        "bgcolor": "#adbbac",
+        "hdcolor": "#000000",
+        "ctcolor": "#211217",
+        "opacity": 1,
+        "image1": "shopify:\/\/shop_images\/Home_36369b9965.png",
+        "heading": "",
+        "smallheading": "The feeling of home means everything to us.",
+        "content": "We designed Mycube so you can feel at home wherever you are, whether near or far, knowing the things you love are secure and organized",
+        "pos": "center"
+      }
+    },
+    "18aea49f-0bd4-48e9-97f8-0856981c2ada": {
+      "type": "rca_storytext_with_color",
+      "settings": {
+        "bgcolor": "#f8f6f2",
+        "hdcolor": "#000000",
+        "ctcolor": "#211217",
+        "opacity": 1,
+        "image1": "shopify:\/\/shop_images\/Mother_and_Son_Legacy_ba5194e99d.png",
+        "heading": "",
+        "smallheading": "Generations of Expertise",
+        "content": "Mycube’s family legacy of safekeeping goes back 100+ years when Lois' great uncle opened up shop in lower Manhattan.\n<br>\n<br>\nScott's grandfather continued the family business in the 1950s on Canal Street. Three generations later, Mycube carries on a family tradition of exceptional products and unwavering customer support.",
+        "pos": "center"
+      }
+    },
+    "b2bd13bf-c3ee-4530-bb07-99aaf82ee3dd": {
+      "type": "rca_storytext_with_color",
+      "settings": {
+        "bgcolor": "#adbbac",
+        "hdcolor": "#000000",
+        "ctcolor": "#211217",
+        "opacity": 1,
+        "heading": "",
+        "smallheading": "",
+        "content": "“We’re committed to harnessing our history and expertise to build the next generation of safekeeping. We’re reimagining what safes can look like and how tech can revolutionize its very functions.”\n<br>\n<br>\n–Lois and Scott Annan\n<br>\nMother &amp; Son Founders of Mycube",
+        "pos": "center"
+      }
+    },
+    "05787e96-b4bb-4106-8e07-358d58208598": {
+      "type": "rca_storytext_with_color",
+      "settings": {
+        "bgcolor": "#134039",
+        "hdcolor": "#000000",
+        "ctcolor": "#f8f6f2",
+        "opacity": 1,
+        "heading": "",
+        "smallheading": "Our Guiding Principles",
+        "content": "Throughout our journey, we’ve looked to these principles to guide us.",
+        "pos": "center"
+      }
+    },
+    "35c041bd-252c-427c-ac4b-83d714ef418f": {
+      "type": "rca_storytext_with_color",
+      "settings": {
+        "bgcolor": "#f8f6f2",
+        "hdcolor": "#000000",
+        "ctcolor": "#211217",
+        "opacity": 1,
+        "image1": "shopify:\/\/shop_images\/Customer_Priority_b917218f04.png",
+        "heading": "",
+        "smallheading": "You are our priority",
+        "content": "We’ve reimagined the customer experience to center your needs and priorities. Our live, local representatives are our greatest resource dedicated to supporting you 7 days a week, 365 days a year.",
+        "pos": "left"
+      }
+    },
+    "f8ed773e-a357-4bd6-9d70-3e6fd0df0c2e": {
+      "type": "rca_storytext_with_color",
+      "settings": {
+        "bgcolor": "#f8f6f2",
+        "hdcolor": "#000000",
+        "ctcolor": "#211217",
+        "opacity": 1,
+        "image1": "shopify:\/\/shop_images\/Building_Safe_Hands_6a6c7a5ba5.png",
+        "heading": "",
+        "smallheading": "Everything in its place",
+        "content": "We consider form and function to create intuitive, beautifully designed safes that live harmoniously in your home. Our safes are designed to sit on the most common shelf depths and designs.",
+        "pos": "left"
+      }
+    },
+    "d67b21c1-97dc-4e24-ba97-73932eddf157": {
+      "type": "rca_storytext_with_color",
+      "settings": {
+        "bgcolor": "#f8f6f2",
+        "hdcolor": "#000000",
+        "ctcolor": "#211217",
+        "opacity": 1,
+        "image1": "shopify:\/\/shop_images\/Trust_ec244bdee4.png",
+        "heading": "",
+        "smallheading": "A tradition of trust",
+        "content": "For generations people have trusted our family to take care of what they love. Our mission is to carry on this tradition of trust with enduring design that’s guaranteed to last a lifetime.",
+        "pos": "left"
+      }
+    },
+    "8a60d518-ff37-465f-a3b3-0b66a26166a2": {
+      "type": "rca_storytext_with_color",
+      "settings": {
+        "bgcolor": "#f8f6f2",
+        "hdcolor": "#000000",
+        "ctcolor": "#211217",
+        "opacity": 1,
+        "image1": "shopify:\/\/shop_images\/Engraving_Safe_ad91f7cd0f.png",
+        "heading": "",
+        "smallheading": "Innovation starts with necessity",
+        "content": "We lead the charge in innovative solutions and believe in our ability to transform and improve the way we secure the things that matter most to us.",
+        "pos": "left"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "199c021b-1e11-4b40-a15a-c3bc3ce0b528",
+    "ec61ae0a-865b-4bf1-a969-9d0c06aa72c3",
+    "18aea49f-0bd4-48e9-97f8-0856981c2ada",
+    "b2bd13bf-c3ee-4530-bb07-99aaf82ee3dd",
+    "05787e96-b4bb-4106-8e07-358d58208598",
+    "35c041bd-252c-427c-ac4b-83d714ef418f",
+    "f8ed773e-a357-4bd6-9d70-3e6fd0df0c2e",
+    "d67b21c1-97dc-4e24-ba97-73932eddf157",
+    "8a60d518-ff37-465f-a3b3-0b66a26166a2"
+  ]
+}

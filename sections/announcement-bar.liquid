@@ -1,0 +1,154 @@
+<style>
+  .announcement-bar{
+    background: {{ section.settings.background }};
+  }
+  .announcement-bar__message{
+    color: {{ section.settings.text }};
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.4;
+    font-size: 1rem;
+    text-decoration: none;
+    letter-spacing: .1em;
+  }
+  .announcement-bar > .page-width{
+    position: relative;
+  }
+  .announcement-bar > .page-width > button{
+    position: absolute;
+    right: calc(0px + 1.5rem);
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+    background: transparent;
+    border: none;
+  }
+  .announcement-bar > .page-width > button div{
+    position: absolute;
+    background-color: #f5f6f6;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 1px;
+  }
+  .nav__message__close__tick--left{
+    transform: translate(-50%,-50%) rotate(45deg);
+  }
+  .nav__message__close__tick--right{
+    transform: translate(-50%,-50%) rotate(135deg);
+  }
+  @media screen and (min-width: 990px){
+    .announcement-bar__message{
+      font-size: 1.4rem;
+    }
+    .announcement-bar > .page-width > button{
+      right: calc(0px + 5rem);
+    }
+  }
+</style>
+{%- for block in section.blocks -%}
+  {%- case block.type -%}
+    {%- when 'announcement' -%}
+      <div class="announcement-bar" role="region" aria-label="{{ 'sections.header.announcement' | t }}" {{ block.shopify_attributes }}>
+        {%- if block.settings.text != blank -%}
+          {%- if block.settings.link != blank -%}
+            <a href="{{ block.settings.link }}" class="announcement-bar__link link link--text focus-inset animate-arrow">
+          {%- endif -%}
+            <div class="page-width">
+              <p class="announcement-bar__message {{ block.settings.text_alignment }}">
+                {{ block.settings.text | escape }}
+                {%- if block.settings.link != blank -%}
+                  {% render 'icon-arrow' %}
+                {%- endif -%}
+              </p>
+              <button id="close-announcement">
+                <div class="nav__message__close__tick--left"></div>
+                <div class="nav__message__close__tick--right"></div>
+              </button>
+            </div>
+          {%- if block.settings.link != blank -%}
+            </a>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+  {%- endcase -%}
+{%- endfor -%}
+
+<script>
+  (function(){
+    document.querySelector('#close-announcement').addEventListener('click', function(){
+      document.querySelector('#shopify-section-announcement-bar').style.display = 'none';
+      headerSize();
+    }, false);
+  })();
+</script>
+{% schema %}
+{
+  "name": "t:sections.announcement-bar.name",
+  "max_blocks": 12,
+  "settings": [
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background colour",
+      "default": "#134039",
+      "info": "Controls the background of the announcement bar."
+    },
+    {
+      "type": "color",
+      "id": "text",
+      "label": "Text colour",
+      "default": "#f1f2f2",
+      "info": "Controls the text colour for the blocks inside the announcement bar."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "announcement",
+      "name": "t:sections.announcement-bar.blocks.announcement.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Welcome to our store",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
+        },
+        {
+          "type": "select",
+          "id": "text_alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "t:sections.announcement-bar.blocks.announcement.settings.text_alignment.options__1.label"
+            },
+            {
+              "value": "center",
+              "label": "t:sections.announcement-bar.blocks.announcement.settings.text_alignment.options__2.label"
+            },
+            {
+              "value": "right",
+              "label": "t:sections.announcement-bar.blocks.announcement.settings.text_alignment.options__3.label"
+            }
+          ],
+          "default": "center",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.text_alignment.label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.link.label"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "announcement"
+      }
+    ]
+  }
+}
+{% endschema %}

@@ -1,0 +1,44 @@
+<section>
+    <div class="rca_fpi_main">
+        <div class="rca_fpi_contain">
+            <img src="{{ section.settings.image | image_url: master }}">
+        </div>
+    </div>
+</section>
+<script>
+document.querySelector("html").addEventListener("load resize scroll", function() {
+var width = document.querySelector(this).width();
+if(width < 767){
+    document.querySelector(".rca_fpi_main").each(function() {
+    var windowTop = document.querySelector(window).scrollTop;
+    var elementTop = document.querySelector(this).offset().top;
+    var leftPosition = -199;
+    if(leftPosition > -200){
+     leftPosition = windowTop - elementTop;
+    }
+    if(leftPosition < 0){
+      document.querySelector(this)
+        .querySelector(".rca_fpi_contain img").attr('style','object-position: '+leftPosition+'px 0;');
+    }
+  });
+}
+});
+</script>
+{% schema %}
+  {
+  "name": "RCA Full page Image",
+  "class":"rca_fullpage_image",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        }
+    ],
+    "presets": [
+        {
+            "name": "RCA Full page Image"
+        }
+    ]
+  }
+{% endschema %} 

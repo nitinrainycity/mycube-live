@@ -1,0 +1,56 @@
+{
+  "sections": {
+    "3a70f203-af0c-4b79-b28a-c4b346066b56": {
+      "type": "blog_banner",
+      "blocks": {
+        "995f0a7b-2747-4f00-8b03-27f5fffc0b48": {
+          "type": "text",
+          "settings": {
+            "btn-name": "Home Organization",
+            "btn-link": "shopify:\/\/blogs\/home-organization"
+          }
+        },
+        "b079ce5f-dd43-457e-acef-855681a82148": {
+          "type": "text",
+          "settings": {
+            "btn-name": "Security",
+            "btn-link": "shopify:\/\/blogs\/security"
+          }
+        },
+        "50932039-092b-47ef-9c6e-9a6f3937bee8": {
+          "type": "text",
+          "settings": {
+            "btn-name": "Mycube History",
+            "btn-link": "shopify:\/\/blogs\/mycube-history"
+          }
+        }
+      },
+      "block_order": [
+        "995f0a7b-2747-4f00-8b03-27f5fffc0b48",
+        "b079ce5f-dd43-457e-acef-855681a82148",
+        "50932039-092b-47ef-9c6e-9a6f3937bee8"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/05_WalkInCloset_BioCubeMiniWhite_020_copy_b7b2336d7c.jpg",
+        "heading": "The Safe Life",
+        "color_heading": "#ffffff"
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "layout": "collage",
+        "show_image": true,
+        "image_height": "medium",
+        "show_date": false,
+        "show_author": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "3a70f203-af0c-4b79-b28a-c4b346066b56",
+    "main"
+  ]
+}

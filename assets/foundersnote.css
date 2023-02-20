@@ -1,0 +1,417 @@
+/* new css Foundersnote */
+.rca_founders_img_text .page-width {
+    max-width: 100%;
+    padding: 0px;
+}
+
+.rca_founders_img_text .image-with-text__media-item {
+    width: 60%;
+    height: 72vh;
+}
+.rca_founders_img_text .image-with-text__content {
+    padding: 0px 84px;
+}
+.rca_founders_img_text .image-with-text__text-item.grid__item {
+    width: 40%;
+}
+.rca_founders_img_text h2.image-with-text__heading.h1 {
+    font-size: 45.6px;
+    color: #000;
+    line-height: 54.72px;
+    font-weight: 400;
+    font-family: Wigrum;
+    letter-spacing: 0px;
+}
+.rca_founders_img_text .image-with-text__text.rte.body {
+    font-size: 24px;
+    color: #000;
+    line-height: 33.6px;
+    margin-top: 48px;
+    font-weight: 300;
+    font-family: Wigrum;
+    letter-spacing: 0px;
+}
+.rca_founders_img_text .image-with-text .global-media-settings{
+    border: none;
+    padding: 0px !important;
+}
+/* Rca Founders Quote */
+.rca_founders_quote h2.rich-text__heading span {
+    font-weight: 300;
+    line-height: 42.12px;
+    font-size: 32.3px;
+    color: #000;
+    font-weight: 400;
+    font-family: Wigrum;
+    letter-spacing: 0px;
+}
+
+.rca_founders_quote .rich-text__blocks {
+    max-width: 913px;
+}
+/* rca founder pick */
+section.rca_founder_pick {
+    background: #e5dcd3;
+}
+section.rca_founder_pick .founder_pick_wp {
+    display: flex;
+}
+
+section.rca_founder_pick .founder_pick_wp .img_lt {
+    width: 50%;
+    line-height: 0px;
+}
+
+
+section.rca_founder_pick .founder_pick_wp .tex_rt {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0px 40px;
+}
+section.rca_founder_pick .founder_pick_wp .tex_rt .prd_img_tex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.rca_founder_pick .founder_pick_wp .tex_rt .prd_img_tex .img_prd {
+    width: 50%;
+    line-height: 0px;
+}
+
+section.rca_founder_pick .founder_pick_wp .tex_rt .prd_img_tex .img_prd img {
+    width: 100%;
+}
+
+section.rca_founder_pick .founder_pick_wp .tex_rt .prd_img_tex .prd_tex {
+    width: 50%;
+    padding: 0px 24px;
+}
+section.rca_founder_pick .founder_pick_wp .tex_rt h4 {
+    font-size: 33.6px;
+    margin: 0px 0px 30px;
+    text-align: left;
+    line-height:40.32px;
+    font-weight: 400;
+    font-family: Wigrum;
+    letter-spacing: 0px;
+}
+section.rca_founder_pick .founder_pick_wp .tex_rt .prd_img_tex .prd_tex p {
+    font-size: 21.6px;
+    font-weight: 300;
+    line-height:30.24px;
+    color: #000;
+    text-align: left;
+    font-weight: 300;
+    font-family: Wigrum;
+    margin-top: 0px;
+    letter-spacing: 0px;
+}
+section.rca_founder_pick .founder_pick_wp .tex_rt .prd_img_tex a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background: #b0bdb0;
+    align-items: center;
+    border-radius: 3px;
+    font-size: 24px;
+    color: #222;
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-top: 40px;
+    transition: all 0.4s;
+    font-weight: 400;
+    font-weight: 400;
+    font-family: Wigrum;
+    letter-spacing: 0px;
+}
+section.rca_founder_pick .founder_pick_wp .img_prd img {
+    border-radius: 5px;
+}
+section.rca_founder_pick .founder_pick_wp .tex_rt .prd_img_tex a:hover {
+    background: #144039;
+    color: #e5dcd3;
+}
+
+section.rca_founder_pick .founder_pick_wp .img_lt img {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+}
+
+section.rca_founder_pick .founder_pick_wp.right {
+    flex-direction: row-reverse;
+}
+
+/* Rca Founders Message */
+
+.rca_founders_message h2.rich-text__heading.rte.h1 {
+    font-size: 45.6px;
+    color: #144039;
+    font-weight: 400;
+    line-height: 54.72px;
+    font-weight: 400;
+    font-family: Wigrum;
+    letter-spacing: 0px;
+}
+
+.rca_founders_message .rich-text__text.rte {
+    margin-top: 48px;
+}
+
+.rca_founders_message .rich-text__text.rte p {
+    color: #144039;
+    font-weight: 300;
+    font-size: 25.6px;
+    margin-bottom: 24px;
+    line-height: 35.28px;
+    font-family: Wigrum;
+    letter-spacing: 0px;
+}
+.rca_founders_message .rich-text__text.rte p:last-child{
+    margin: 0px;
+}
+
+.rca_founders_message .rich-text__wrapper.page-width {
+    max-width: 100%;
+    padding: 10px 240px;
+}
+
+.rca_founders_message .rich-text__wrapper.page-width * {
+    max-width: 100%;
+}
+@media only screen and (max-width: 1800px){
+    .rca_founders_img_text .image-with-text__content {
+        padding: 0 70px;
+    }
+    .rca_founders_img_text h2.image-with-text__heading.h1 {
+        font-size: 38px;
+        line-height: 45px;
+    }
+    .rca_founders_img_text .image-with-text__text.rte.body {
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 40px;
+    }
+    .rca_founders_quote h2.rich-text__heading span {
+        line-height: 35px;
+        font-size: 27px;
+    }
+    .rca_founders_quote h2.rich-text__heading {
+        line-height: 35px;
+    }
+    .rca_founders_message h2.rich-text__heading.rte.h1 {
+        font-size: 38px;
+        line-height: 45px;
+    }
+    section.rca_founder_pick .founder_pick_wp .tex_rt h4 {
+        font-size: 28px;
+        line-height: 33.5px;
+    }
+    section.rca_founder_pick .founder_pick_wp .tex_rt .prd_img_tex .prd_tex p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    section.rca_founder_pick .founder_pick_wp .tex_rt .prd_img_tex a {
+        height: 83px;
+        font-size: 20px;
+    }
+    .rca_founders_quote .rich-text.content-container {
+        padding: 70px 380px;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .rca_founders_img_text .image-with-text__text.rte.body {
+        font-size: 20px;
+        line-height: 26px;
+        margin-top: 48px;
+    }
+    .rca_founders_quote h2.rich-text__heading span {
+        font-size: 27px;
+        line-height: 32px;
+    }
+    .rca_founders_quote .rich-text.content-container {
+        padding: 70px 250px;
+    }
+    .rca_founders_quote .rich-text__wrapper {
+        width: 100%;
+        padding: 0px;
+    }
+    .rca_founders_message .rich-text__wrapper.page-width {
+        padding: 0px 120px;
+    }
+    .rca_founders_message .rich-text__text.rte p {
+        font-size: 21px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+    .rca_founders_message .rich-text__text.rte {
+        margin-top: 40px;
+    }
+    .rca_founders_message h2.rich-text__heading.rte.h1 {
+        font-size: 38px;
+    }
+    section.rca_founder_pick .founder_pick_wp .tex_rt h4 {
+        font-size: 28px;
+        margin: 0px 0px 10px;
+    }
+    section.rca_founder_pick .founder_pick_wp .tex_rt .prd_img_tex {
+        display: block;
+    }
+    section.rca_founder_pick .founder_pick_wp .tex_rt .prd_img_tex .prd_tex {
+        width: 100%;
+        padding: 0px 0px;
+    }
+    section.rca_founder_pick .founder_pick_wp .tex_rt .prd_img_tex .img_prd {
+        width: 100%;
+    }
+    section.rca_founder_pick .founder_pick_wp .tex_rt .prd_img_tex .prd_tex p {
+        font-size: 18px;
+        line-height: 21px;
+        margin: 5px 0px 0px;
+    }
+    section.rca_founder_pick .founder_pick_wp .img_lt img {
+        width: 100%;
+        height: 90vh;
+        object-fit: cover;
+    }
+    section.rca_founder_pick .founder_pick_wp .tex_rt .prd_img_tex a {
+        margin-top: 10px;
+        font-size: 20px;
+        height: 83px
+    }
+}
+@media only screen and (max-width: 960px){
+ 
+
+    section.rca_founder_pick .founder_pick_wp .tex_rt {
+        padding: 0px 20px;
+        width: 50%;
+    }
+    section.rca_founder_pick .founder_pick_wp .tex_rt .prd_img_tex {
+        display: block;
+        width: 100%;
+    }
+    section.rca_founder_pick .founder_pick_wp .img_lt img {
+        height: 100%;
+    }
+    section.rca_founder_pick .founder_pick_wp .img_lt {
+        width: 50%;
+    }
+    section.rca_founder_pick .founder_pick_wp .tex_rt .prd_img_tex .img_prd {
+        width: 100%;
+    }
+    section.rca_founder_pick .founder_pick_wp .img_lt img {
+        height: 50rem;
+    }
+    section.rca_founder_pick .founder_pick_wp .tex_rt .prd_img_tex .prd_tex {
+        width: 100%;
+        padding: 0px 0px;
+    }
+    section.rca_founder_pick .founder_pick_wp .tex_rt .prd_img_tex .prd_tex p {
+        font-size: 14px;
+        line-height: 19.6px;
+    }
+    .rca_founders_message .rich-text__wrapper.page-width {
+        max-width: 100%;
+        padding: 0px 20px;
+        width: 100%;
+    }
+    .rca_founders_message .rich-text {
+        padding: 30px 0px;
+    }
+    .rca_founders_message h2.rich-text__heading.rte.h1 {
+        font-size: 28px;
+        line-height: 33.6px;
+    }
+    .rca_founders_message .rich-text__text.rte p {
+        font-size: 16px;
+        margin-bottom: 24px;
+        line-height: 22.4px;
+        margin-bottom: 20px;
+    }
+    .rca_founders_quote h2.rich-text__heading span {
+        line-height: 21px;
+        font-size: 20px;
+    }
+    .rca_founders_quote h2.rich-text__heading {
+        line-height: 21px;
+    }
+    .rca_founders_message .rich-text__text.rte {
+        margin-top: 40px;
+    }
+    .rca_founders_quote .rich-text.content-container {
+        padding: 40px 150px;
+    }
+    
+    .rca_founders_quote .rich-text__wrapper {
+        padding: 0px;
+        width: 100%;
+    }
+    .rca_founders_img_text .image-with-text__media-item {
+        width: 100%;
+        height: 50rem;
+    }
+    .rca_founders_img_text h2.image-with-text__heading.h1 {
+        font-size: 28px;
+        line-height: 33.6px;
+    }
+    .rca_founders_img_text .image-with-text__text.rte.body {
+        font-size: 16px;
+        color: #000;
+        margin-top: 20px;
+        line-height: 22.4px;
+    }
+    .rca_founders_img_text .image-with-text__content {
+        padding: 20px;
+    }
+    section.rca_founder_pick .founder_pick_wp .tex_rt .prd_img_tex a {
+        height: 78px;
+        margin: 10px 0px 0px;
+    }
+    section.rca_founder_pick .founder_pick_wp .tex_rt h4 {
+        font-size: 22px;
+        margin: 0px 0px 10px;
+        text-align: center;
+    }
+    section.rca_founder_pick .founder_pick_wp .tex_rt .prd_img_tex .img_prd img {
+        width: auto;
+        height: 150px;
+        display: block;
+        margin: auto;
+    }
+
+    .rca_founders_img_text .image-with-text .global-media-settings{
+        padding: 0px !important;
+    }
+    .rca_founders_img_text .image-with-text__text-item.grid__item {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px){
+    section.rca_founder_pick .founder_pick_wp {
+        display: block;
+    }
+    section.rca_founder_pick .founder_pick_wp .tex_rt {
+        width: 100%;
+        padding: 30px 20px;
+        display: block;
+    }
+    section.rca_founder_pick .founder_pick_wp .img_lt img {
+        height: 40vh;
+    }
+    section.rca_founder_pick .founder_pick_wp .img_lt {
+        width: 100%;
+    }
+    .rca_founders_quote .rich-text.content-container {
+        padding: 40px 30px;
+    }
+    .rca_founders_quote h2.rich-text__heading span {
+        line-height: 16px;
+        font-size: 16px;
+    }
+    section.rca_founder_pick .founder_pick_wp .tex_rt .prd_img_tex a {
+        font-size: 16px;
+    }
+}

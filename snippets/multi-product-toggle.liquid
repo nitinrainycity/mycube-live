@@ -1,0 +1,38 @@
+
+{% comment %}
+    USING PRODUCT LIST METAFIELD TO CREATE A MULTI PRODUCT OPTION SELECTOR
+    ON PRODUCT PAGES BELOW PRODUCT PRICE THIS SECTION WILL BE RENDERED. 
+    FEW THINGS TO NOTE:
+    hasMultiProduct is a boolean that will be used to determine if the section should be rendered or not.
+    this is passed from the render snippet in the main-product.liquid. and its value is 
+    adjusted when the metafield data exists for that perticular product. 
+ {% endcomment %}
+
+ {%- assign multiProductValue = product.metafields.custom.multiple_product_toggle.value -%}
+ {%- assign productStyle = product.metafields.custom.product_style_heading -%}
+ {%- if multiProductValue != blank -%}
+     {%- assign hasMultiProduct = true -%}
+ {%- endif -%}
+ 
+ {%- if hasMultiProduct == true -%}
+     <div class="product-multi__container">
+         <legend class="product-multi-option__title">
+             STYLE: 
+             <span Class=product-multi-selected__title>
+                 {{ productStyle }}
+             </span>
+         </legend>
+         <ul class="product-multi-options__wrapper">
+             {% for multiProduct in multiProductValue %}
+                 {% assign currentMulti = forloop.index %}
+                 <div class="product-multi-option__container {%if currentMulti == 1%} active {%endif%}">
+                     <li class="product-shape-option__inner">
+                         <a href="{{ multiProduct.url }}">
+                             {{ multiProduct.featured_image | image_url: width: 80 | image_tag: loading: 'lazy' }}
+                         </a>
+                     </li>
+                 </div>
+             {% endfor %}
+         </ul>
+     </div>
+ {%- endif -%}

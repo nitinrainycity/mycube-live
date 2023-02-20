@@ -1,0 +1,145 @@
+      {% assign product = section.settings.product1 %}
+      <div id="mycube_product" class="hidediv">
+         <div class="quiz_product">
+            <section class="cl_nw">
+               <div class="cl_in">
+                  <div class="cl_col">
+                     <div class="cl_img">
+                        <a href="{{ product.url }}">
+                        <img
+                        class="fisrt_pimage-{{ product.id }}"
+                        srcset="{{ product.featured_image | product_img_url: "master" }}"
+                        src="{{ product.featured_image | product_img_url: "master" }}"
+                        alt="{{ product.title }}"
+                        loading="lazy">
+                        </a>
+                        <a class="backmycube_screen bck_btn" href="javascript:void(0);">
+                           <svg _ngcontent-uvp-c62="" aria-label="right arrow icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.42 16.36"><g _ngcontent-uvp-c62="" id="Layer_1-2" data-name="Layer 1"><line _ngcontent-uvp-c62="" y1="8.18" x2="29.25" y2="8.18" class="qp__back__arrow__line"></line><polygon _ngcontent-uvp-c62="" points="22.62 16.36 21.25 14.89 28.48 8.18 21.25 1.47 22.62 0 31.41 8.18 22.62 16.36" class="qp__back__arrow__point"></polygon></g></svg>
+                           Back
+                        </a>
+                     </div>
+
+                     <div class="tx_rt tx-rt_{{ product.id }}" data-proid ="{{ product.id }}">
+                        <div class="tx_in">
+                           <div class="tl_wp tl_wp-{{ product.id }} quiz-title__price">
+                              <a href="{{ product.url }}">{{ product.title | escape }}</a>
+                              <div class="price_cust">
+                                 {% render 'price', product: product, price_class: 'quiz_price' %}
+                              </div>
+                           </div>
+                           <div class="wp_nw">
+                              <div class="swatch_flex tl_wp-{{ product.id }}">
+                                 <div class="swatch_name">
+                                    {% if product.options.size > 0 %}
+                                    <h4>{{ product.options[0] }}</h4>
+                                    {% endif %}
+                                    <h5 class="chekcolor-{{ product.id }}">{{ product.selected_or_first_available_variant.title }}</h5>
+                                 </div>
+                                 <div class="new_swtch">
+                                    {% for option in product.options %}
+                                    {% if option == 'Color' %}
+                                    {% assign index = forloop.index0 %}
+                                    {% assign color = '' %}
+                                    {% for variant in product.variants %}
+                                    {% capture color %}{{ variant.options[index] }}{% endcapture %}
+                                    {% comment %} <img src="{{ color | downcase | append: '.gif' | asset_url }}" alt="{{ color }}" width="16" height="16" /> {% endcomment %}
+                                    <div class="swatch_new">
+                                       {% if color contains ' ' %}
+                                       {% assign newval = color | split: " " %}
+                                       {% assign colorval = newval[1] %}
+                                       {% else %}
+                                       {% assign colorval = color %}
+                                       {% endif %}
+                                       <input class="{% if forloop.index == 1 %}checked{% endif %} radiobtn-{{ product.id }} {% if variant.available %}available{% else %}unavailabe{% endif %}" type="radio" name="swatch_cust" value="{{ color | downcase }}" data-varimg="{{ variant.image.src | img_url: 'master' }}" data-productid="{{ product.id }}" data-varid="{{ variant.id }}">
+                                       <label for="{{ color | downcase }}" style="background-color:{{ colorval | downcase }};"></label>
+                                    </div>
+                                    {% endfor %}
+                                    {% endif %}
+                                    {% endfor %}
+                                 </div>
+                              </div>
+                              <div class="desc tl_wp-{{ product.id }}">
+                                 {{ product.description }}
+                              </div>
+							  {% if product.metafields.custom.product_dimmensions_quiz_page !=blank %}
+                              <div class="product_custmization pro_custm-{{ product.id }}">
+                                 <h3><a class="dim_pro" data-proid="{{ product.id }}" href="javascript:void(0);">Dimensions</a></h3>
+                                 <h3>
+                                    <a href="{{ product.url }}">
+                                       Learn more 
+                                       <svg _ngcontent-ybc-c61="" aria-label="right arrow icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.42 16.36">
+                                          <g _ngcontent-ybc-c61="" id="Layer_1-2" data-name="Layer 1">
+                                             <line _ngcontent-ybc-c61="" y1="8.18" x2="29.25" y2="8.18" class="qps__info__arrow__line"></line>
+                                             <polygon _ngcontent-ybc-c61="" points="22.62 16.36 21.25 14.89 28.48 8.18 21.25 1.47 22.62 0 31.41 8.18 22.62 16.36" class="qps__info__arrow__point"></polygon>
+                                          </g>
+                                       </svg>
+                                    </a>
+                                 </h3>
+                              </div>
+							  
+							   <div class="product_dimmension pro_dim-{{ product.id }}">
+                              <div class="tgl_tex">
+                                 Tap anywhere to exit 
+                              </div>
+                              <div class="in_div">
+                                 {{ product.metafields.custom.product_dimmensions_quiz_page }}                            
+                              </div>
+                              </div>
+							  {% endif %}
+                              <div class="ct_btn">
+                                 <product-form>
+                                    {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                                    <input
+                                       class="variantid-{{ product.id }}"
+                                       type="hidden"
+                                       name="id"
+                                       value="{{ product.selected_or_first_available_variant.id }}"
+                                       disabled
+                                       > 
+                                    <button
+                                    id="{{ product_form_id }}-submit"
+                                    type="submit"
+                                    name="add"
+                                    class="quick-add__submit button button--full-width button--secondary add_btn-{{ product.id }}""
+                                    aria-haspopup="dialog"
+                                    aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ product.id }}"
+                                    aria-live="polite"
+                                    data-sold-out-message="true"
+                                    {% if product.selected_or_first_available_variant.available == false %}
+                                    disabled
+                                    {% endif %}
+                                    >
+                                    <span class="add_btn_text-{{ product.id }}">
+                                    {%- if product.selected_or_first_available_variant.available -%}
+                                    {{ 'products.product.add_to_cart' | t }}
+                                    {%- else -%}
+                                    {{ 'products.product.sold_out' | t }}
+                                    {%- endif -%}
+                                    </span>
+                                    <span class="sold-out-message hidden">
+                                    {{ 'products.product.sold_out' | t }}
+                                    </span>
+                                    <div class="loading-overlay__spinner hidden">
+                                       <svg
+                                          aria-hidden="true"
+                                          focusable="false"
+                                          role="presentation"
+                                          class="spinner"
+                                          viewBox="0 0 66 66"
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          >
+                                          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                                       </svg>
+                                    </div>
+                                    </button>
+                                    {%- endform -%}
+                                 </product-form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div>

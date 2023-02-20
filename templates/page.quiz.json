@@ -1,0 +1,21 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "21b5188f-7991-4cf8-bca3-4b05ac5af9af": {
+      "type": "rca_quiz",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "21b5188f-7991-4cf8-bca3-4b05ac5af9af"
+  ]
+}

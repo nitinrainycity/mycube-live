@@ -1,0 +1,270 @@
+<style>
+    .mob_accordion [data-accordion="content-container"] {
+        height: 0;
+        overflow: hidden;
+        transition: all 0.1s linear;
+    }
+
+    /* UI for demo purposes only, delete if you must */
+    .mob_accordion .accordion {
+        max-width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        border: 1px solid #eee;
+        list-style-type: none;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .mob_accordion .accordion__item:not(:first-child) {
+        border-top: 1px solid #eee;
+    }
+
+    .mob_accordion .accordion__trigger {
+        display: block;
+        position: relative;
+        padding: 10px 12px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .mob_accordion .accordion__trigger:after {
+        content: '';
+        position: absolute;
+        right: 18px;
+        transform: rotate(90deg);
+        width: 20px;
+        height: 20px;
+        border: 1px solid #144039;
+        display: flex;
+        top: 0px;
+        bottom: 0;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+    }
+    .mob_accordion .accordion__trigger.is-collapsed::after {
+        transform: translateY(-50%) rotate(90deg);
+    }
+
+    .mob_accordion .accordion__content {
+        padding: 10px 0px 16px;
+    }
+    .mob_accordion .prod_collection {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 0px;
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+    .mob_accordion .prod_collection .prod_cont {
+        width: 50%;
+        max-width: calc(50% - 10px);
+    }
+    .mob_accordion h4.prd_title {
+        font-size: 16px;
+        margin: 0px;
+        line-height: 20px;
+        color: #222;
+        font-weight: 400;
+    }
+    .mob_accordion p.prd_desc {
+        font-size: 16px;
+        margin: 0px;
+        line-height: 20px;
+        color: #222;
+        font-weight: 300;
+    }
+    .mob_accordion .menu-drawer {
+        width: calc(100vw - 0rem);
+    }
+    .mob_accordion li.accordion__item a {
+        text-decoration: none;
+    }
+    div#menu-drawer {
+        background: #f5f6f6;
+    }
+    .menu-drawer__navigation {
+        padding: 20px;
+    }
+    nav.menu-drawer__navigation ul.accordion {
+        box-shadow: none;
+        border: none;
+        margin: 0px;
+        display: grid;
+        row-gap: 25px;
+    }
+    .mob_accordion ul.accordion >li > a {
+        font-size: 22px;
+        color: #000;
+        text-decoration: none;
+        padding: 0px 0px;
+        font-weight: 300;
+        display: block;
+        text-transform: capitalize;
+        line-height: 26px;
+    }
+    .mob_accordion .accordion__item:not(:first-child){
+        border: none !important;
+    }
+    .mob_accordion .accordion__trigger:before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border: 1px solid #144039;
+        display: block;
+        position: absolute;
+        right: 24px;
+        margin: auto;
+        top: -4px;
+        bottom: 0;
+        transform: rotate(45deg);
+        border-left: 0px;
+        border-top: 0px;
+    }
+
+    .mob_accordion .accordion__trigger.is-collapsed:after {
+        visibility: visible;
+        width: 1px;
+        border: none;
+        background: #144039;
+        transform: rotate(45deg);
+        right: 25px;
+        top: -2px;
+    }
+    .mob_accordion .accordion__trigger.is-collapsed:before {
+        width: 1px;
+        height: 20px;
+        border: none;
+        background: #000;
+        transform: rotate(-45deg);
+        right: 25px;
+        top: -2px !important;
+    }
+    .mob_accordion .menu-drawer__utility-links {
+        display: none;
+    }
+    nav.menu-drawer__navigation ul.accordion li:nth-child(5):before {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100%;
+        margin: 20px 0px 45px;
+        background: #000;
+    }
+    nav.menu-drawer__navigation ul.accordion li:nth-child(7):before {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100%;
+        margin: 20px 0px 45px;
+        background: #000;
+    }
+    .mob_accordion .img_cont img{
+        width: 100%;
+        border-radius: 5px;
+        height: 83px;
+        object-fit: cover;
+    }
+    li[data-title="Help"] .prod_collection .prod_cont,  li[data-title="About"] .prod_collection .prod_cont{
+        width: 100%;
+        max-width: calc(100% - 10px);
+        
+    }
+    li[data-title="Help"] .prod_collection .prod_cont h4.prd_title,  li[data-title="About"] .prod_collection .prod_cont h4.prd_title{
+     
+        font-size:22px;
+        font-weight:300;
+    }
+    .header__icon--cart svg{
+        height: 31px !important;
+    }
+</style>
+
+<div class="mob_accordion">
+    <ul class="accordion">
+        {% for link in section.settings.mob-topmenu.links %}
+        {% if link.links == blank %}
+        <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
+        {% else %}
+        <li data-title="{{ link.title }}" class="accordion__item">
+            <a href="javascript:void(0)" data-accordion="trigger" class="accordion__trigger">{{ link.title | escape }}</a>
+            <div data-accordion="content-container">
+                <div data-accordion="content" class="accordion__content">
+                    <div class="prod_collection">
+                      {% for childlink in link.links %}
+                       <div class="prod_cont">
+                            <a href="{{ childlink.url }}">
+                                {% if childlink.url contains '/products/' %}
+                                <div class="img_cont">
+                                  <img src="{{ childlink.object.featured_image | product_img_url : "master" }}" alt='{{ childlink.title | escape }}'>
+                                </div>
+                                {% endif %}
+                                <h4 class="prd_title" >{{ childlink.title | escape }}</h4>
+                                {% if childlink.url contains '/products/' %}
+                                <p class="prd_desc">{{ childlink.object.type }}</p>
+                                {% endif %}
+                            </a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </li>
+        {% endif %}
+        {% endfor %}
+        <li><a href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}">
+         {% if customer %}Account{% else %}Log in / Register{% endif %}
+        </a>
+        </li>
+        <li><a href="">  Refer a Friend  </a></li>
+    </ul>
+
+
+
+
+    <script>
+        class Accordion {
+            constructor(element) {
+                element.addEventListener(
+                    'click', this._toggleContent.bind(this, element));
+
+            }
+
+            _openContent(trigger, el, heightLimit) {
+                el.style.height = heightLimit + 'px';
+                trigger.classList.add('is-collapsed');
+            }
+
+            _closeContent(trigger, el) {
+                el.style.height = '0px';
+                trigger.classList.remove('is-collapsed');
+            }
+
+            _toggleContent(element) {
+                if (element.classList.contains('is-collapsed')) {
+                    this._closeContent(element, element.nextElementSibling);
+                } else {
+                    const contentHeight = element.nextElementSibling.querySelectorAll('[data-accordion="content"]')[
+                        0].offsetHeight;
+
+                    for (const e of document.querySelectorAll('[data-accordion="trigger"]')) {
+                        this._closeContent(element, e.nextElementSibling);
+                        e.classList.remove('is-collapsed');
+                    }
+
+                    this._openContent(element, element.nextElementSibling, contentHeight);
+                }
+            }
+        }
+
+
+        /* Initialize */
+        for (const e of document.querySelectorAll('[data-accordion="trigger"]')) {
+            const newAccordion = new Accordion(e);
+            newAccordion;
+        }
+    </script>

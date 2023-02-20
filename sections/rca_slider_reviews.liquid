@@ -1,0 +1,78 @@
+<section class="slider_review">
+  <div class="swiper-container slide_in">
+    <div class="swiper-wrapper slide_in_reviewa">
+      {% for block in section.blocks %}
+        <div class="swiper-slide">
+          <div class="slide_col">
+              <div class="mdl_tex">
+                <div class="slide_star">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 17.77L18.18 21.5L16.54 14.47L22 9.74L14.81 9.13L12 2.5L9.19 9.13L2 9.74L7.46 14.47L5.82 21.5L12 17.77Z" fill="#144039"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 17.77L18.18 21.5L16.54 14.47L22 9.74L14.81 9.13L12 2.5L9.19 9.13L2 9.74L7.46 14.47L5.82 21.5L12 17.77Z" fill="#144039"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 17.77L18.18 21.5L16.54 14.47L22 9.74L14.81 9.13L12 2.5L9.19 9.13L2 9.74L7.46 14.47L5.82 21.5L12 17.77Z" fill="#144039"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 17.77L18.18 21.5L16.54 14.47L22 9.74L14.81 9.13L12 2.5L9.19 9.13L2 9.74L7.46 14.47L5.82 21.5L12 17.77Z" fill="#144039"/>
+                  </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                      <path d="M12 17.77L18.18 21.5L16.54 14.47L22 9.74L14.81 9.13L12 2.5L9.19 9.13L2 9.74L7.46 14.47L5.82 21.5L12 17.77Z" fill="#144039"/>
+                  </svg>
+                </div>
+                <div class="rca_tex_in">
+                  <div class="content_html">
+                    {{ block.settings.cont }}
+                  </div>
+                  <h5>{{ block.settings.name }}</h5>
+                </div>
+              </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="swiper-pagination"></div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
+{% schema %}
+  {
+  "name": "RCA Review Slider",
+  "class":"rca_review_slider",
+  "settings": [
+  ],
+  "blocks": [
+  {
+    "type": "image",
+    "name": "Slide",
+      "settings": [
+       {
+        "type": "image_picker",
+        "id": "left_image",
+        "label": "Left Image"
+       },
+       {
+        "type": "richtext",
+        "id": "cont",
+        "label": "Content"
+       },
+       {
+        "type": "text",
+        "id": "name",
+        "label": "Customer Name"
+       }
+   ]
+  }
+  ],
+  "presets": [
+  {
+  "name": "RCA Review Slider"
+  }
+  ]
+  }
+{% endschema %}

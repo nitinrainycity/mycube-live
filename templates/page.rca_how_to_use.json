@@ -1,0 +1,246 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "6e84cf25-6774-4547-b7c8-5264719f0b2e": {
+      "type": "rca_page_heading",
+      "settings": {
+        "heading": "How to Use",
+        "color_heading": "#000000",
+        "content": "<p>Select your generation of Mycube to access manuals, video tutorials and learn about set up, FAQ and more.<\/p>",
+        "color_content": "#000000",
+        "link": "",
+        "btn": "",
+        "bgcolor": "#ffffff",
+        "opacity": 0,
+        "pos": "center",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "a3583df2-05b7-4e59-99b0-6fd535d37461": {
+      "type": "rca_how_categories",
+      "blocks": {
+        "8788e18f-0a4a-4f2b-bb0b-b79b49b2e4b2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xlarge_orange_large_copy_9a9c75b071.jpg",
+            "link": "shopify:\/\/pages\/classic-gen-one",
+            "btn": "",
+            "name": "Mycube Classic",
+            "generation": "1st Generation"
+          }
+        },
+        "17acfe75-435f-4041-8826-e1c11ae23362": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xlarge_180131_My_Cube_7867_copy_1_4b9c19f010.jpg",
+            "link": "",
+            "btn": "",
+            "name": "Mycube Classic",
+            "generation": "2nd Generation"
+          }
+        },
+        "f8d2bde8-7778-4b7b-a7e0-2873bd910ef2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xlarge_07_My_Cube_White_Classic_022_copy_fbdfbc07f3.jpg",
+            "link": "",
+            "btn": "",
+            "name": "Mycube Classic",
+            "generation": "3rd Generation"
+          }
+        },
+        "e12f65a8-bb30-4a63-8640-f02ef2519693": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xlarge_Zahoran_My_Cube_Safe_021_copy_5aba099a12.jpg",
+            "link": "",
+            "btn": "",
+            "name": "Mycube Mini",
+            "generation": "1st Generation"
+          }
+        },
+        "f0cb9a6b-b2c0-499a-9224-8f7a0ac2fef1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xlarge_180131_My_Cube_7882_5aa9121eba.jpg",
+            "link": "",
+            "btn": "",
+            "name": "Mycube Mini",
+            "generation": "2nd Generation"
+          }
+        },
+        "499c8b54-1c1c-4d2a-9fe5-ef9f1c4b181f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xlarge_03_My_Cube_Silver_Classic_028_1_copy_recrop_c99e291ca9.jpg",
+            "link": "",
+            "btn": "",
+            "name": "Mycube Mini",
+            "generation": "3rd Generation"
+          }
+        },
+        "26bc47eb-7531-4a13-a916-53453661c6a6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Classic_Grey_Angle_Open_a2fe55002e.jpg",
+            "link": "",
+            "btn": "",
+            "name": "Mycube Mini",
+            "generation": "1st Generation"
+          }
+        }
+      },
+      "block_order": [
+        "8788e18f-0a4a-4f2b-bb0b-b79b49b2e4b2",
+        "17acfe75-435f-4041-8826-e1c11ae23362",
+        "f8d2bde8-7778-4b7b-a7e0-2873bd910ef2",
+        "e12f65a8-bb30-4a63-8640-f02ef2519693",
+        "f0cb9a6b-b2c0-499a-9224-8f7a0ac2fef1",
+        "499c8b54-1c1c-4d2a-9fe5-ef9f1c4b181f",
+        "26bc47eb-7531-4a13-a916-53453661c6a6"
+      ],
+      "settings": {
+        "spacing": "top",
+        "heading": "Mycube Classic",
+        "color_heading": "#000000",
+        "content": "",
+        "color_content": "#000000"
+      }
+    },
+    "71474fe7-fdb7-4a60-9b0e-32de6ccd8e65": {
+      "type": "rca_how_categories",
+      "blocks": {
+        "f38d455f-4467-4f10-af2e-5f605cdb6d74": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xlarge_10_Biocube_Blue_Classic_010_copy_1_7347a8e120.jpg",
+            "link": "",
+            "btn": "",
+            "name": "Biocube",
+            "generation": ""
+          }
+        },
+        "43a66cda-f366-4441-bcd9-65222cc4bc42": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xlarge_14_Biocube_White_Mini_040_copy_1208175f96.jpg",
+            "link": "",
+            "btn": "",
+            "name": "Biocube Mini",
+            "generation": ""
+          }
+        },
+        "bbb1cd40-8369-4696-b366-a358616b12bd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/032621_Mycube_0050_72dpi_0dd8182510.jpg",
+            "link": "",
+            "btn": "",
+            "name": "Biocube In Drawer",
+            "generation": ""
+          }
+        },
+        "9cabf257-c527-489b-baf7-aa70251971aa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xlarge_Biocube_Pro_4c3cace67b.jpg",
+            "link": "",
+            "btn": "",
+            "name": "Biocube Professional",
+            "generation": ""
+          }
+        },
+        "f6582cdf-d69d-4839-8aa0-3451f788020d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MC_Biocube_Plus_Feat_beb5207be6.jpg",
+            "link": "",
+            "btn": "",
+            "name": "Biocube Plus",
+            "generation": ""
+          }
+        }
+      },
+      "block_order": [
+        "f38d455f-4467-4f10-af2e-5f605cdb6d74",
+        "43a66cda-f366-4441-bcd9-65222cc4bc42",
+        "bbb1cd40-8369-4696-b366-a358616b12bd",
+        "9cabf257-c527-489b-baf7-aa70251971aa",
+        "f6582cdf-d69d-4839-8aa0-3451f788020d"
+      ],
+      "settings": {
+        "spacing": "top_bottom",
+        "heading": "Biocube",
+        "color_heading": "#000000",
+        "content": "",
+        "color_content": "#000000"
+      }
+    },
+    "1d3a0ab7-4060-4951-bba3-5755f32a637c": {
+      "type": "rca_how_categories",
+      "blocks": {
+        "c6258d5a-f015-41cc-8156-75973be707e8": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xlarge_15_My_Cube_Fire_White_010_copy_recrop_e9292c4990_1.jpg",
+            "link": "",
+            "btn": "",
+            "name": "Firecube",
+            "generation": "2nd Generation"
+          }
+        }
+      },
+      "block_order": [
+        "c6258d5a-f015-41cc-8156-75973be707e8"
+      ],
+      "settings": {
+        "spacing": "top_bottom",
+        "heading": "Mycube Fire",
+        "color_heading": "#000000",
+        "content": "",
+        "color_content": "#000000"
+      }
+    },
+    "d72a97c9-982c-4734-a691-b31d02c5aaf9": {
+      "type": "rca_how_categories",
+      "blocks": {
+        "152f09bc-1a2d-486f-bd76-20a494c72066": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xlarge_01_i_Cube_White_Classic_024_recrop_7a840e2c3f.jpg",
+            "link": "",
+            "btn": "",
+            "name": "iCube",
+            "generation": ""
+          }
+        }
+      },
+      "block_order": [
+        "152f09bc-1a2d-486f-bd76-20a494c72066"
+      ],
+      "settings": {
+        "spacing": "bottom",
+        "heading": "iCube",
+        "color_heading": "#000000",
+        "content": "",
+        "color_content": "#000000"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "6e84cf25-6774-4547-b7c8-5264719f0b2e",
+    "a3583df2-05b7-4e59-99b0-6fd535d37461",
+    "71474fe7-fdb7-4a60-9b0e-32de6ccd8e65",
+    "1d3a0ab7-4060-4951-bba3-5755f32a637c",
+    "d72a97c9-982c-4734-a691-b31d02c5aaf9"
+  ]
+}

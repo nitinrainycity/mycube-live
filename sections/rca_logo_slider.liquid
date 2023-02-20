@@ -1,0 +1,65 @@
+<section>
+  <div class="lwi_main">
+    <div class="lwi_contain">
+      <div class="lwi_data">
+        <h3 class="lwi_data_title">{{ section.settings.title }}</h3>
+        <div class="swiper-container logo-swiper">
+          <div class="swiper-wrapper lwi_detail">
+            {% for block in section.blocks %}
+              <div class="swiper-slide">
+                <div class="lwi_block">
+                  <div class="lwi_imgtxt">
+                    <a href="{{ block.settings.link }}">
+                      <div class="lwi_img">
+                        <img src="{{ block.settings.image | img_url :'master' }}" alt="{{ block.settings.image.alt }}">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+          <div class="swiper-pagination"></div>
+          <!-- If we need navigation buttons -->
+  
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "RCA Logos Slide",
+  "class": "rca-logos-slide",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "RCA Logos Slide"
+    }
+  ]
+}
+{% endschema %}

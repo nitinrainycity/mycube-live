@@ -1,0 +1,269 @@
+.rca-categories-flex {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    -moz-column-gap: 5rem;
+    column-gap: 60px;
+    row-gap: 48px;
+    padding: 60px 96px 30px;
+    width: 87%;
+    margin: 0 auto;
+}
+.rca-categories-main.rca-categories-fullwidth .rca-categories-flex{
+    padding:60px calc(6.5% + 96px) 30px;
+    width:100%;
+}
+.rca-categories-block:hover {
+    background-color: #b0beaf;
+    transition: background-color .2s;
+}
+.rca-categories-block img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 17.8vw;
+}
+.rca-categories_img {
+    grid-row: span 1;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    padding-top: 86%;
+    background-size: cover;
+    background-position: center;
+}
+.rca-categories-block {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+}
+.shopify-section.rca-categories-section:not(:last-child) .rca-categories-flex{
+    border-bottom: 1px solid #000;
+}
+.rca-categories_txt p {
+    font-size: 19.2px;
+    line-height: 26.88px;
+    letter-spacing: 0;
+    color: #222;
+    font-weight: 300;
+    font-family: 'Wigrum';
+    margin: 0px;
+}
+.rca-categories_txt{
+    margin:24px 0px 0px;
+}
+.rca-categories_imgtxt a{
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+}
+.rca-categories-main.rca-categories-fullwidth .rca-categories_data h3 {
+    font-size: 28.8px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #000;
+    font-family: 'Wigrum';
+    margin: 0px;
+    padding-top:30px;
+}
+.rca-categories-main.rca-categories-fullwidth {
+    padding-left: 96px;
+    padding-right: 96px;
+}
+.rca_spacetop{
+    padding-top: 60px;
+}
+.rca_spacebottom{
+    padding-bottom: 60px;
+}
+@media only screen and (max-width: 1800px){
+    .rca-categories-main.rca-categories-fullwidth {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .rca-categories-main.rca-categories-fullwidth .rca-categories_data h3 {
+        font-size: 24px;
+    }
+    .rca-categories_txt{
+        margin:20px 0px 0px;
+    }
+    .rca-categories_txt p {
+        font-size: 16px;
+        line-height: 1.4;
+        letter-spacing: 0;
+        color: #222;
+        font-weight: 300;
+        font-family: 'Wigrum';
+        margin: 0px;
+    }
+    .rca-categories-block {
+        cursor: pointer;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #000;
+    }
+    .rca-categories-flex {
+        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        -moz-column-gap: 50px;
+        column-gap: 50px;
+        row-gap: 40px;
+        padding: 50px 80px 25px;
+        width: 87%;
+        margin: 0 auto;
+    }
+    .rca-categories-block img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        height: 338px;
+    } 
+}
+@media only screen and (max-width: 1200px){
+    .rca-categories-main.rca-categories-fullwidth .rca-categories_data h3{
+        padding-top:20px;
+    }
+    .rca-categories-main.rca-categories-fullwidth .rca-categories-flex{
+        padding:50px;
+    }
+    .rca_spacetop{
+        padding-top:50px;
+    }
+    .rca_spacebottom{
+        padding-bottom:50px;
+    }
+    .rca-categories-main.rca-categories-fullwidth {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .rca-categories_txt{
+        margin:20px 0px 0px;
+    }
+    .rca-categories_txt p {
+        font-size: 16px;
+        line-height: 1.4;
+        letter-spacing: 0;
+        color: #222;
+        font-weight: 300;
+        font-family: 'Wigrum';
+        margin: 0px;
+    }
+    .rca-categories-block {
+        cursor: pointer;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #000;
+    }
+    .rca-categories-flex {
+        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        -moz-column-gap: 50px;
+        column-gap: 50px;
+        row-gap: 40px;
+        padding: 50px 50px 50px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .rca-categories-block img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        height: 13vw;
+    } 
+}
+@media only screen and (max-width: 960px){
+    .rca_spacetop{
+        padding-top:20px;
+    }
+    .rca_spacebottom{
+        padding-bottom:20px;
+    }
+    .rca-categories-main.rca-categories-fullwidth {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .rca-categories-main.rca-categories-fullwidth .rca-categories_data h3 {
+        font-size: 22px;;
+    }
+    .rca-categories-main.rca-categories-fullwidth .rca-categories-flex {
+        padding: 50px;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .rca_spacetop{
+        padding-top:20px;
+    }
+    .rca_spacebottom{
+        padding-bottom:20px;
+    }
+    .rca-categories-main.rca-categories-fullwidth .rca-categories-flex {
+        padding: 30px 20px 35px;
+        width: 100%;
+    }
+    .rca-categories-main.rca-categories-fullwidth .rca-categories_data h3{
+        padding-top: 0px;
+    }
+    .rca-categories-main.rca-categories-fullwidth {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .rca-categories_txt{
+        margin:20px 0px 0px;
+    }
+    .rca-categories_txt p {
+        font-size: 16px;
+        line-height: 1.4;
+        letter-spacing: 0;
+        color: #222;
+        font-weight: 300;
+        font-family: 'Wigrum';
+        margin: 0px;
+    }
+    .rca-categories-block {
+        cursor: pointer;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #000;
+    }
+    .rca-categories-flex {
+        gap: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        -moz-column-gap: 5rem;
+        column-gap: 5rem;
+        row-gap: 2rem;
+        padding: 20px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .rca-categories-block img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        height: auto;
+    } 
+}

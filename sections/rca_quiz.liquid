@@ -1,0 +1,409 @@
+{{ 'quiz.css' | asset_url | stylesheet_tag }}
+<section>
+  <div class="quiz_main">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'first_data' %}
+          <div id="stageone" class="hidediv">
+            <div class="quiz_page_heading">
+              <h3>{{ block.settings.tophead }}</h3>
+            </div>
+            <div class="quiz_multiple_selection">
+              <div id="fire" class="quiz_block">
+                <div class="quiz_icon">
+                  <img src="{{ block.settings.image1 }}">
+                </div>
+                <h5>{{ block.settings.heading1 }}</h5>
+                <p>{{ block.settings.content1 }}</p>
+              </div>
+              <div id="security" class="quiz_block">
+                <div class="quiz_icon">
+                  <img src="{{ block.settings.image2 }}">
+                </div>
+                <h5>{{ block.settings.heading2 }}</h5>
+                <p>{{ block.settings.content2 }}</p>
+              </div>
+              <div id="technology" class="quiz_block">
+                <div class="quiz_icon">
+                  <img src="{{ block.settings.image3 }}">
+                </div>
+                <h5>{{ block.settings.heading3 }}</h5>
+                <p>{{ block.settings.content3 }}</p>
+              </div>
+            </div>
+          </div>
+      {% endcase %}
+    {% endfor %}
+
+    <div id="stagetwo" class="hidediv">
+      <a class="backfirst_screen bck_btn" href="javascript:void(0);">
+        <svg
+          _ngcontent-uvp-c62=""
+          aria-label="right arrow icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 31.42 16.36"
+        >
+          <g _ngcontent-uvp-c62="" id="Layer_1-2" data-name="Layer 1"><line _ngcontent-uvp-c62="" y1="8.18" x2="29.25" y2="8.18" class="qp__back__arrow__line"></line><polygon _ngcontent-uvp-c62="" points="22.62 16.36 21.25 14.89 28.48 8.18 21.25 1.47 22.62 0 31.41 8.18 22.62 16.36" class="qp__back__arrow__point"></polygon></g>
+        </svg>
+        Back
+      </a>
+      <div class="quiz_page_heading">
+        <h3>How do you want to open your safe?</h3>
+      </div>
+      <div class="quiz_multiple_selection two_blocks_only">
+        <div id="safe_btn" class="quiz_block">
+          <div class="quiz_icon">
+            <img src="https://d365rsaepqsecj.cloudfront.net/Buttons_432d652175.svg">
+          </div>
+          <h5>Button</h5>
+        </div>
+        <div id="safe_biometric" class="quiz_block">
+          <div class="quiz_icon">
+            <img src="https://d365rsaepqsecj.cloudfront.net/Touch_8ef3ea9052.svg">
+          </div>
+          <h5>Biometric</h5>
+        </div>
+      </div>
+    </div>
+
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'button_data' %}
+          <div id="stagetwo_one" class="hidediv">
+            <div class="quiz_multiple_selection rca_round_image">
+              <div id="myc_classic" class="quiz_block">
+                <div class="quiz_icon">
+                  <img src="{{ block.settings.image1 | img_url:'master' }}">
+                </div>
+                <h5>{{ block.settings.heading1 }}</h5>
+              </div>
+              <div id="myc_mini" class="quiz_block">
+                <div class="quiz_icon">
+                  <img src="{{ block.settings.image2 | img_url:'master' }}">
+                </div>
+                <h5>{{ block.settings.heading2 }}</h5>
+              </div>
+              <div id="myc_wallsafe" class="quiz_block">
+                <div class="quiz_icon">
+                  <img src="{{ block.settings.image3 | img_url:'master' }}">
+                </div>
+                <h5>{{ block.settings.heading3 }}</h5>
+              </div>
+              <a class="stagetwo_one bck_btn" href="javascript:void(0);">
+                <svg
+                  _ngcontent-uvp-c62=""
+                  aria-label="right arrow icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 31.42 16.36"
+                >
+                  <g _ngcontent-uvp-c62="" id="Layer_1-2" data-name="Layer 1"><line _ngcontent-uvp-c62="" y1="8.18" x2="29.25" y2="8.18" class="qp__back__arrow__line"></line><polygon _ngcontent-uvp-c62="" points="22.62 16.36 21.25 14.89 28.48 8.18 21.25 1.47 22.62 0 31.41 8.18 22.62 16.36" class="qp__back__arrow__point"></polygon></g>
+                </svg>
+                Back
+              </a>
+            </div>
+          </div>
+      {% endcase %}
+    {% endfor %}
+
+    <div id="stagetwo_two" class="hidediv">
+      <a class="stagetwo_one bck_btn" href="javascript:void(0);">
+        <svg
+          _ngcontent-uvp-c62=""
+          aria-label="right arrow icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 31.42 16.36"
+        >
+          <g _ngcontent-uvp-c62="" id="Layer_1-2" data-name="Layer 1"><line _ngcontent-uvp-c62="" y1="8.18" x2="29.25" y2="8.18" class="qp__back__arrow__line"></line><polygon _ngcontent-uvp-c62="" points="22.62 16.36 21.25 14.89 28.48 8.18 21.25 1.47 22.62 0 31.41 8.18 22.62 16.36" class="qp__back__arrow__point"></polygon></g>
+        </svg>
+        Back
+      </a>
+      <div class="quiz_page_heading">
+        <h3>What style safe are you looking for?</h3>
+      </div>
+      <div class="quiz_multiple_selection">
+        <div id="self" class="quiz_block">
+          <h5>Shelf</h5>
+        </div>
+        <div id="drawer" class="quiz_block">
+          <h5>Drawer</h5>
+        </div>
+        <div id="locker" class="quiz_block">
+          <h5>Locker</h5>
+        </div>
+      </div>
+    </div>
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'self_data' %}
+          <div id="stagetwo_two_one" class="hidediv">
+            <a class="back_safe_style bck_btn" href="javascript:void(0);">
+              <svg
+                _ngcontent-uvp-c62=""
+                aria-label="right arrow icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 31.42 16.36"
+              >
+                <g _ngcontent-uvp-c62="" id="Layer_1-2" data-name="Layer 1"><line _ngcontent-uvp-c62="" y1="8.18" x2="29.25" y2="8.18" class="qp__back__arrow__line"></line><polygon _ngcontent-uvp-c62="" points="22.62 16.36 21.25 14.89 28.48 8.18 21.25 1.47 22.62 0 31.41 8.18 22.62 16.36" class="qp__back__arrow__point"></polygon></g>
+              </svg>
+              Back
+            </a>
+            <div class="quiz_multiple_selection rca_round_image">
+              <div id="biocube" class="quiz_block">
+                <div class="quiz_icon">
+                  <img src="{{ block.settings.image1 | img_url:'master' }}">
+                </div>
+                <h5>{{ block.settings.heading1 }}</h5>
+              </div>
+              <div id="biocube_mini" class="quiz_block">
+                <div class="quiz_icon">
+                  <img src="{{ block.settings.image2 | img_url:'master' }}">
+                </div>
+                <h5>{{ block.settings.heading2 }}</h5>
+              </div>
+              <div id="biocube_plus" class="quiz_block">
+                <div class="quiz_icon">
+                  <img src="{{ block.settings.image3 | img_url:'master' }}">
+                </div>
+                <h5>{{ block.settings.heading3 }}</h5>
+              </div>
+            </div>
+          </div>
+      {% endcase %}
+    {% endfor %}
+    {% render 'fire_product' %}
+    {% render 'tech_product' %}
+    {% render 'mycube_product' %}
+    {% render 'mycubemini_product' %}
+    {% render 'wallsafe_product' %}
+    {% render 'drawer_product' %}
+    {% render 'locker_product' %}
+    {% render 'biocube' %}
+    {% render 'biocube_mini' %}
+    {% render 'biocube_plus' %}
+    {% render 'loading_screen' %}
+    {% render 'perfect_fit' %}
+  </div>
+</section>
+<script src="{{ 'quiz.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{% schema %}
+{
+  "name": "RCA Quiz",
+  "class": "rca-quiz",
+  "settings": [
+    {
+      "type": "product",
+      "id": "fire_product",
+      "label": "Fire Product"
+    },
+    {
+      "type": "product",
+      "id": "tech_product",
+      "label": "Technology Product"
+    },
+    {
+      "type": "product",
+      "id": "drawer_product",
+      "label": "Drawer Product"
+    },
+    {
+      "type": "product",
+      "id": "lock_product",
+      "label": "Locker Product"
+    },
+    {
+      "type": "header",
+      "content": "Select Products",
+      "info": "Select Products Which shows After Click Button"
+    },
+    {
+      "type": "product",
+      "id": "product1",
+      "label": "Product First"
+    },
+    {
+      "type": "product",
+      "id": "product2",
+      "label": "Product Second"
+    },
+    {
+      "type": "product",
+      "id": "product3",
+      "label": "Product Third"
+    },
+    {
+      "type": "header",
+      "content": "Select Products",
+      "info": "Select Products Which shows After Click Self"
+    },
+    {
+      "type": "product",
+      "id": "sproduct1",
+      "label": "Product First"
+    },
+    {
+      "type": "product",
+      "id": "sproduct2",
+      "label": "Product Second"
+    },
+    {
+      "type": "product",
+      "id": "sproduct3",
+      "label": "Product Third"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "first_data",
+      "name": "First Screen Data",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tophead",
+          "label": "Top Heading"
+        },
+        {
+          "type": "text",
+          "id": "image1",
+          "label": "Image First Svg Link"
+        },
+        {
+          "type": "text",
+          "id": "heading1",
+          "label": "Heading First"
+        },
+        {
+          "type": "text",
+          "id": "content1",
+          "label": "Content First"
+        },
+        {
+          "type": "text",
+          "id": "image2",
+          "label": "Image Second Svg Link"
+        },
+        {
+          "type": "text",
+          "id": "heading2",
+          "label": "Heading Second"
+        },
+        {
+          "type": "text",
+          "id": "content2",
+          "label": "Content Second"
+        },
+        {
+          "type": "text",
+          "id": "image3",
+          "label": "Image Third Svg Link"
+        },
+        {
+          "type": "text",
+          "id": "heading3",
+          "label": "Heading Third"
+        },
+        {
+          "type": "text",
+          "id": "content3",
+          "label": "Content Third"
+        }
+      ]
+    },
+    {
+      "type": "button_data",
+      "name": "Button Screen Data",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image1",
+          "label": "Image First"
+        },
+        {
+          "type": "text",
+          "id": "heading1",
+          "label": "Heading First"
+        },
+        {
+          "type": "image_picker",
+          "id": "image2",
+          "label": "Image Second"
+        },
+        {
+          "type": "text",
+          "id": "heading2",
+          "label": "Heading Second"
+        },
+        {
+          "type": "image_picker",
+          "id": "image3",
+          "label": "Image Third"
+        },
+        {
+          "type": "text",
+          "id": "heading3",
+          "label": "Heading Third"
+        }
+      ]
+    },
+    {
+      "type": "self_data",
+      "name": "Self Screen Data",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image1",
+          "label": "Image First"
+        },
+        {
+          "type": "text",
+          "id": "heading1",
+          "label": "Heading First"
+        },
+        {
+          "type": "image_picker",
+          "id": "image2",
+          "label": "Image Second"
+        },
+        {
+          "type": "text",
+          "id": "heading2",
+          "label": "Heading Second"
+        },
+        {
+          "type": "image_picker",
+          "id": "image3",
+          "label": "Image Third"
+        },
+        {
+          "type": "text",
+          "id": "heading3",
+          "label": "Heading Third"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "RCA Quiz"
+    }
+  ]
+}
+{% endschema %}
+<style>
+  .quiz_main .hidediv:nth-child(1) {
+    display: block;
+  }
+
+  .quiz_main .hidediv {
+    display: none;
+  }
+  .product_dimmension {
+    display: none;
+  }
+  .loading_screen {
+    display: none;
+  }
+  .perfect_fit {
+    display: none;
+  }
+</style>

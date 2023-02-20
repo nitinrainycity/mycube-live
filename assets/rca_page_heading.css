@@ -1,0 +1,53 @@
+.rca_page_heading_data h3 {
+    font-size: 33.6px;
+    line-height: 40px;
+    margin: 0px 0px 20px;
+    font-family: 'Wigrum';
+    font-weight: 400;
+    letter-spacing: 0;
+}
+.rca_page_heading_data p {
+    font-size: 33.6px;
+    line-height: 40px;
+    margin: 0px 0px 0px;
+    font-family: 'Wigrum';
+    font-weight: 300;
+    letter-spacing: 0;
+    width: 60%;
+}
+.rca_page_heading_main{
+    display: block;
+    width: 100%;
+    padding: 0 48px;
+}
+@media only screen and (max-width: 1800px){
+    .rca_page_heading_data p,
+    .rca_page_heading_data h3{
+        font-size:28px;
+        line-height: 1.2;
+    }
+    .rca_page_heading_main{
+        padding:0px 40px;
+    }
+}
+@media only screen and (max-width: 960px){
+    .rca_page_heading_data p,
+    .rca_page_heading_data h3{
+        font-size:24px;
+        line-height: 1.2;
+    }
+    .rca_page_heading_main{
+        padding:0px 40px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .rca_page_heading_data p,
+    .rca_page_heading_data h3{
+        font-size:22px;
+        line-height: 1.2;
+        width: 100%;
+    }
+    .rca_page_heading_main{
+        padding:0px 30px;
+    }
+}

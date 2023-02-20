@@ -1,0 +1,138 @@
+/* new css 1/31/2023 */
+/* Collection review css */
+.title_reviews_rating {
+    display: flex;
+    column-gap: 24px;
+}
+ .ruk_rating_snippet .ruk-rating-snippet-count{
+    color: #144039 !important;
+    font-family: Wigrum !important;
+    font-size: 16.8px !important;
+ }
+ .ruk_rating_snippet i {
+    letter-spacing: 6px !important;
+    font-size: 20px !important;
+    color: #144039 !important;
+}
+ .ruk_rating_snippet {
+    min-width: 180px;
+    padding-top: 5px;
+}
+.collection #reviews_fade {
+    z-index: 999999!important;
+}
+.product_main .product__info-container .ruk_rating_snippet {
+    padding-top: 0px;
+}
+/* Collectionreview css end */
+
+/* Product Review Css */
+/* new css 1/31/2023 */
+div#ReviewsWidget {
+    width: 80%;
+    margin: 0 auto 60px;
+    padding: 0px 15px;
+  }
+  .ElementsWidget-prefix .R-TextHeading--xxxs {
+    font-weight: 600;
+    font-family: 'Wigrum';
+    font-size: 15.75px;
+
+  }.ElementsWidget-prefix .R-TextHeading--xxs {
+    font-size: 18px;
+  }
+  .ElementsWidget-prefix .R-TextBody--xs{
+    font-size: 17px;
+  }
+  .ElementsWidget-prefix .R-TextHeading--xxxxs{
+    font-size: 13.5px;
+  }
+  .R-TextBody.R-TextBody--xxxs {
+    font-size: 13.5px;
+  }
+  .ElementsWidget-prefix .R-TextBody--xxxxs {
+    font-size: 12.4px;
+  }
+  .ElementsWidget-prefix .R-TextHeading--inline {
+    font-size: 29px;
+  }
+  .reviews-widget {
+    background: #f5f6f6;
+  }
+  
+/* Reviews page css */
+.page-rca_reviews .page-width.page-width--narrow {
+    max-width: 100%;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 0px;
+}
+
+.page-rca_reviews .page-width.page-width--narrow h1.main-page-title.page-title.h0 {
+    font-size: 45.6px;
+}
+
+.page-rca_reviews {
+    background: #fcfaf6;
+}
+/* new css 13-02-2023 */
+.page-rca_reviews.mycube-reviews .rca_page_width.page-width {
+    min-height: auto;
+}
+/* Collection page css */
+
+@media only screen and (max-width: 1800px){
+    .page-rca_reviews .page-width.page-width--narrow h1.main-page-title.page-title.h0 {
+        font-size: 38px;
+        list-style: 46px;
+    }
+    .page-rca_reviews .page-width.page-width--narrow {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .ruk_rating_snippet i {
+        letter-spacing: 4px !important;
+        font-size: 18px !important;
+    }
+     .ruk_rating_snippet .ruk-rating-snippet-count{
+        font-size: 14px !important;
+    }
+}
+@media only screen and (max-width: 960px){
+    .page-rca_reviews .page-width.page-width--narrow h1.main-page-title.page-title.h0 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .ElementsWidget-prefix .R-TextHeading--inline {
+        font-size: 29px;
+      }
+}
+@media only screen and (max-width: 600px){
+    div#ReviewsWidget {
+        padding: 0 0px;
+    }
+    .ElementsWidget-prefix .R-TextHeading--inline {
+      font-size: 25px;
+    }
+    .page-rca_reviews .page-width.page-width--narrow h1.main-page-title.page-title.h0 {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+    .page-rca_reviews .page-width.page-width--narrow {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+      .title_reviews_rating {
+        flex-wrap: wrap;
+        margin-bottom: 25px;
+    }
+    .title_reviews_rating h4 {
+      margin-bottom: 0px;
+      line-height: 26px;
+      width: 100%;
+    }
+    .product_main .product__info-container .ruk_rating_snippet {
+      margin-top: 0px;
+  }
+}

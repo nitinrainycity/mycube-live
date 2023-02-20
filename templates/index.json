@@ -1,0 +1,385 @@
+{
+  "sections": {
+    "304db715-2b84-4517-83eb-2a5055e6a831": {
+      "type": "rca_banner",
+      "settings": {
+        "iframe": "https:\/\/player.vimeo.com\/video\/675775752",
+        "title": "Home Safes for Everyday Life",
+        "cont": "<p>Designer home safes that give you peace of mind to last a lifetime. <\/p>",
+        "label": "Shop now",
+        "link": "shopify:\/\/collections\/bestsellers",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "f32f8ffe-a564-42f1-b4a1-43b312a295a1": {
+      "type": "rca_slider_reviews",
+      "blocks": {
+        "f4854b92-58b5-42ee-8f67-ac32a817b8c0": {
+          "type": "image",
+          "settings": {
+            "cont": "<p>“What a great solution. We just put in a new closet buildout and needed a safe that would fit, and the Mycube safe is perfect.” <\/p>",
+            "name": "- Victoria A., Pasadena, CA"
+          }
+        },
+        "4fb2d7c5-57c6-4476-b705-849478eaf73c": {
+          "type": "image",
+          "settings": {
+            "cont": "<p>\"The hassle-free experience of having a cellular connection built into a smart safe is really nice. It worked seamlessly for me every time I needed it!\" <\/p>",
+            "name": "- Newsweek"
+          }
+        },
+        "577a566b-ca90-45fa-b0b1-a64be26be2fe": {
+          "type": "image",
+          "settings": {
+            "cont": "<p>“What a great solution. We just put in a new closet buildout and needed a safe that would fit, and the Mycube safe is perfect.” <\/p>",
+            "name": "- David D., Austin, TX"
+          }
+        },
+        "93af08ad-0a68-47e2-9108-d166ec29b0d0": {
+          "type": "image",
+          "settings": {
+            "cont": "<p>\"It is just the right size for my home. Perfectly holds what I need it to, and the trays help to keep it organized.\" <\/p>",
+            "name": "- Sarah R., Miami , FL"
+          }
+        },
+        "b00cad7a-47ea-4e22-8135-2effcd870f88": {
+          "type": "image",
+          "settings": {
+            "cont": "<p>“I am very pleased with the safe. We had some jewelry misplaced and we now have it securely in one place. Perfect product for our needs.”<\/p>",
+            "name": "- Fred W., New York, NY"
+          }
+        },
+        "cededf90-a363-4949-b347-007f72f9f30d": {
+          "type": "image",
+          "settings": {
+            "cont": "<p>\"Mycube is a really chic small home safe that is perfect for design-conscious people, like ourselves.\" <\/p>",
+            "name": "- Guest Of A Guest"
+          }
+        }
+      },
+      "block_order": [
+        "f4854b92-58b5-42ee-8f67-ac32a817b8c0",
+        "4fb2d7c5-57c6-4476-b705-849478eaf73c",
+        "577a566b-ca90-45fa-b0b1-a64be26be2fe",
+        "93af08ad-0a68-47e2-9108-d166ec29b0d0",
+        "b00cad7a-47ea-4e22-8135-2effcd870f88",
+        "cededf90-a363-4949-b347-007f72f9f30d"
+      ],
+      "settings": {
+      }
+    },
+    "96d62171-45ce-46ee-b103-b079c8e8a4a0": {
+      "type": "rca_heading_button",
+      "settings": {
+        "title": "Find the perfect safe by tapping through a couple questions",
+        "link": "shopify:\/\/pages\/quiz",
+        "btn": "Take the quiz"
+      }
+    },
+    "8b0f5a46-0f9c-4769-8ad4-8e977125186e": {
+      "type": "rca_featured_tabs_slider",
+      "blocks": {
+        "b8f5e45b-7f2f-412f-80a2-d34edd5d2109": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MC_Biocube_Plus_Feat_beb5207be6_443321b8-5fcf-4307-a827-51b143677143.jpg",
+            "link": "shopify:\/\/products\/biocube-plus",
+            "imagealt": "Biocube Plus",
+            "description": "The newest addition to our Biocube family"
+          }
+        },
+        "f521a070-07be-45bd-b526-71a3d45023fa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xlarge_MC_Biocube_White_Feat_188c2fd275.jpg",
+            "link": "shopify:\/\/products\/biocube-classic",
+            "imagealt": "Biocube",
+            "description": "Store up to 10 unique prints and unlock with a touch"
+          }
+        },
+        "5775ea10-cc48-479f-bf2e-8863512d9cc7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MC_Watchwinder_Feat_24bc60262f.jpg",
+            "link": "shopify:\/\/products\/mycube-fire-1",
+            "imagealt": "Watch Winder",
+            "description": "Dual winder to help you keep perfect time"
+          }
+        },
+        "7e5cadd7-cd99-4d29-b9cf-ffbfc5d3516e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MC_Wallsafe_Feat_e771c8491f_61ea0ccf-aaf1-4680-b6ad-23f0ac171fd7.jpg",
+            "link": "shopify:\/\/products\/wall-safe",
+            "imagealt": "Wall Safe",
+            "description": "Streamlined security to fit in between two wall studs"
+          }
+        },
+        "ae857689-6ce5-4e7d-9cf6-463f9f5dbdbb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xlarge_Biocube_Pro_4c3cace67b_768fc38e-d9aa-4088-8664-c191bdbea46b.jpg",
+            "link": "shopify:\/\/products\/biocube-professional",
+            "imagealt": "Biocube Professional",
+            "description": "The perfect solution for your larger valuable belongings"
+          }
+        }
+      },
+      "block_order": [
+        "b8f5e45b-7f2f-412f-80a2-d34edd5d2109",
+        "f521a070-07be-45bd-b526-71a3d45023fa",
+        "5775ea10-cc48-479f-bf2e-8863512d9cc7",
+        "7e5cadd7-cd99-4d29-b9cf-ffbfc5d3516e",
+        "ae857689-6ce5-4e7d-9cf6-463f9f5dbdbb"
+      ],
+      "settings": {
+        "title": "",
+        "btn": "Shop Safe"
+      }
+    },
+    "59eaf951-af0c-4e76-a000-c4ae76d76c9d": {
+      "type": "rca_block_img",
+      "settings": {
+        "heading": "Quick Access",
+        "color_heading": "#000000",
+        "content": "<p>Each Mycube home safe is designed to protect your life where you need it most. Keep your vital belongings secure in our Mycube Classic and Biocube home safes. Shield against fire and water with our one-hour protection Firecube fire safe. Receive tamper alerts with our iCube connected wireless safe. Real products made for real life. <\/p>",
+        "color_content": "#000000",
+        "link": "shopify:\/\/collections\/bestsellers",
+        "btn": "Shop now",
+        "image": "shopify:\/\/shop_images\/large_10_MyCubeClassicBlack_034__1__copy_ec61b1bcf8.jpg",
+        "bgcolor": "#ffffff",
+        "opacity": 0,
+        "pos": "right",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "d0f0c81d-1eaa-47e4-a8e6-faf1243cda44": {
+      "type": "rca_block_img",
+      "settings": {
+        "heading": "Modern Style",
+        "color_heading": "#000000",
+        "content": "<p>Innovation starts with necessity. From the iCube’s ease of access through our groundbreaking smartphone app, to the Biocube Professional’s 12-bolt auto-locking door, our products consider your convenience and a need for unwavering reliability from as many angles as possible. <\/p>",
+        "color_content": "#000000",
+        "link": "shopify:\/\/collections\/icube",
+        "btn": "Shop now",
+        "image": "shopify:\/\/shop_images\/icube.webp",
+        "bgcolor": "#ffffff",
+        "opacity": 0,
+        "pos": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "b5e32ca9-ed44-4aad-b0a7-26e47318334f": {
+      "type": "rca_block_img",
+      "settings": {
+        "heading": "Easy Organization",
+        "color_heading": "#000000",
+        "content": "<p>Fingerprint access, push-button keypads, and app-enabled locking give you the peace of mind you deserve - all with our five-star 24\/7 customer service, a lifetime guarantee, and options for organization. We aim to simplify your life in the home so you can live your best life out of it.<\/p>",
+        "color_content": "#000000",
+        "link": "shopify:\/\/products\/biocube-classic",
+        "btn": "Shop now",
+        "image": "shopify:\/\/shop_images\/biocube-hp.webp",
+        "bgcolor": "#ffffff",
+        "opacity": 0,
+        "pos": "right",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "7509920b-8be1-4dcf-91dd-af1416172ee7": {
+      "type": "rca_icon_with_text",
+      "blocks": {
+        "a2eef46d-bb2d-4dc4-9234-664614c39227": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/design.png",
+            "heading": "Design",
+            "content": "Goodbye old-fashioned turn-dial safes. Designed to fit your modern lifestyle, Mycube looks as good as it protects."
+          }
+        },
+        "13d6873c-a1f6-4938-9f3a-e0b89be5e815": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/expertise.png",
+            "heading": "Expertise",
+            "content": "Family owned and operated, we have 100 years of experience in safeguarding what’s most valuable to you."
+          }
+        },
+        "7ff3dab4-2992-4391-b37e-779842d01e5e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/service.png",
+            "heading": "Service",
+            "content": "Our safes are so reliable, we guarantee them for a lifetime. If you need support, our local team is available for you 24\/7\/365."
+          }
+        }
+      },
+      "block_order": [
+        "a2eef46d-bb2d-4dc4-9234-664614c39227",
+        "13d6873c-a1f6-4938-9f3a-e0b89be5e815",
+        "7ff3dab4-2992-4391-b37e-779842d01e5e"
+      ],
+      "settings": {
+        "title": "Why you'll love Mycube"
+      }
+    },
+    "37e489ad-fae6-4d6b-904f-46e8269ed4c8": {
+      "type": "rca_featured_collection",
+      "settings": {
+        "title": "Best Sellers",
+        "coll": "bestsellers"
+      }
+    },
+    "9b79beae-5876-486f-bc79-a553f6b59abb": {
+      "type": "rca_logo_slider",
+      "blocks": {
+        "cf9d12c6-8fc3-4d7e-b08a-94f7f0101eaf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ad.webp",
+            "link": ""
+          }
+        },
+        "816614fe-8335-4e3c-b60a-8c5121a57490": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cc.webp",
+            "link": ""
+          }
+        },
+        "ae45dd2d-678c-47a1-ac65-18efff7c67c2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/realsimple.webp",
+            "link": ""
+          }
+        },
+        "9e5eca66-16ea-4b8f-8774-5ab94cd1cb97": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/boutique-design.webp",
+            "link": ""
+          }
+        },
+        "590fd0d4-6d41-4575-80a9-11e8d4120d64": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/domino.webp",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "cf9d12c6-8fc3-4d7e-b08a-94f7f0101eaf",
+        "816614fe-8335-4e3c-b60a-8c5121a57490",
+        "ae45dd2d-678c-47a1-ac65-18efff7c67c2",
+        "9e5eca66-16ea-4b8f-8774-5ab94cd1cb97",
+        "590fd0d4-6d41-4575-80a9-11e8d4120d64"
+      ],
+      "settings": {
+        "title": "We're featured in"
+      }
+    },
+    "a71d3f05-2d0e-4282-ba42-fafed0465fb4": {
+      "type": "rca_product_image",
+      "blocks": {
+        "a023261e-0c05-4d41-8988-c45cff802cd0": {
+          "type": "text",
+          "settings": {
+            "title": "Keypad",
+            "content": "<p>Our original push-button keypad home safe brings together form and function in two convenient sizes that is perfect for any home. Now also available in our recessed wall safe model.<\/p>",
+            "main_linklist": "keyword"
+          }
+        },
+        "e72a9630-fe7d-42d7-b03e-7f2b9c992489": {
+          "type": "text",
+          "settings": {
+            "title": "Biometric",
+            "content": "<p>Our biometric safe fingerprint technology allows you to unlock with a touch, or enter your code on our proprietary touchscreen keypad.<\/p>",
+            "main_linklist": "biometric"
+          }
+        },
+        "dd6f7e09-f69c-4dc0-9529-aa928dee3395": {
+          "type": "text",
+          "settings": {
+            "title": "Fire rated",
+            "content": "<p>Meet our commercial grade fireproof home safe with a certified rating of 1 hour at 1700 degrees to protect against the elements.<\/p>",
+            "main_linklist": "fire"
+          }
+        },
+        "f0bdf8e7-f76b-4e9f-b524-3fbcc4d08014": {
+          "type": "text",
+          "settings": {
+            "title": "App enabled",
+            "content": "<p>Our groundbreaking connected home safe allows you to control your safe entirely with your smartphone, share access, and receive tamper alerts from anywhere in the world.<\/p>",
+            "main_linklist": "technology"
+          }
+        }
+      },
+      "block_order": [
+        "a023261e-0c05-4d41-8988-c45cff802cd0",
+        "e72a9630-fe7d-42d7-b03e-7f2b9c992489",
+        "dd6f7e09-f69c-4dc0-9529-aa928dee3395",
+        "f0bdf8e7-f76b-4e9f-b524-3fbcc4d08014"
+      ],
+      "settings": {
+        "title": "Get started",
+        "content": "To get started with Mycube, browse our catalogue of designer home safes, organizational jewelry trays, and a selection of custom designed home goods. Take our Quiz to discover the perfect home safe for your needs.",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "b1a0bcfe-790b-4c85-86e4-bcfc35cb6b06": {
+      "type": "rca_fullpage_image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/xlarge_Group_Shot_5b49da50ca.jpg"
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 2,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 28,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "304db715-2b84-4517-83eb-2a5055e6a831",
+    "f32f8ffe-a564-42f1-b4a1-43b312a295a1",
+    "96d62171-45ce-46ee-b103-b079c8e8a4a0",
+    "8b0f5a46-0f9c-4769-8ad4-8e977125186e",
+    "59eaf951-af0c-4e76-a000-c4ae76d76c9d",
+    "d0f0c81d-1eaa-47e4-a8e6-faf1243cda44",
+    "b5e32ca9-ed44-4aad-b0a7-26e47318334f",
+    "7509920b-8be1-4dcf-91dd-af1416172ee7",
+    "37e489ad-fae6-4d6b-904f-46e8269ed4c8",
+    "9b79beae-5876-486f-bc79-a553f6b59abb",
+    "a71d3f05-2d0e-4282-ba42-fafed0465fb4",
+    "b1a0bcfe-790b-4c85-86e4-bcfc35cb6b06",
+    "featured_collection"
+  ]
+}

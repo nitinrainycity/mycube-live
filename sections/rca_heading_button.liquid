@@ -1,0 +1,41 @@
+<section>
+    <div class="rca_richtext_custom">
+        <div class="rca_rtc_content">
+            <div class="rca_rtc_heading">
+                <h2>{{ section.settings.title }}</h2>
+                <div class="rca_rtc_btn">
+                    <a href="{{ section.settings.link }}">{{ section.settings.btn }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+  {
+  "name": "RCA Heading Button",
+  "class":"rca_richtext_section rca_heading_button",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Heading"
+        },
+        {
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+        },
+        {
+            "type": "text",
+            "id": "btn",
+            "label": "Button"
+        }
+    ],
+    "presets": [
+        {
+            "name": "RCA Heading Button"
+        }
+    ]
+  }
+{% endschema %}

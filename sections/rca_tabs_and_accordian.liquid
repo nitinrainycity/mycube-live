@@ -1,0 +1,140 @@
+{{ 'rca-tabs-accordian.css' | asset_url | stylesheet_tag }} 
+<div class="container--tabs">
+	<section class="row--tabs">
+        <div class="row_tabs_titles">
+            <div class="row_tabs_heading">
+                <h4>{{ page.title | escape }}:</h4>
+                <p>{{ section.settings.stitle }}:</p>
+            </div>
+            <ul class="nav nav-tabs">
+                {% for block in section.blocks %}
+                <li class="{% if forloop.index == 1 %}active{% endif %}"><a href="#tab-{{ forloop.index }}">{{ block.settings.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+		<div class="ta_tab_content">
+          {% if page.metafields.custom.cannot_open_accordian_heading1 != blank %}
+			<div id="tab-1" class="tab-pane active"> 
+				<span class="glyphicon glyphicon-leaf glyphicon--home--feature two columns text-center"></span>
+				{% render 'tabs_and_accordian' %}
+			</div> 
+          {% endif %}
+          {% if page.metafields.custom.setting_up_accordian_heading1 !=blank %}
+			<div id="tab-2" class="tab-pane">
+				<span class="glyphicon glyphicon-fire glyphicon--home--feature two columns text-center"></span>
+					{% render 'setting_up_accordian' %}
+			</div> 
+            {% endif %}
+            {% if page.metafields.custom.operating_accordian_heading1 !=blank %}
+			<div id="tab-3" class="tab-pane">
+				<span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
+					{% render 'operating_accordian' %}
+			</div>
+            {% endif %}
+
+          {% if page.metafields.custom.troubleshooting_accordian_heading1 !=blank %}
+			<div id="tab-4" class="tab-pane">
+				<span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
+					{% render 'troubleshooting_accordian' %}
+			</div>
+            {% endif %}
+
+           {% if page.metafields.custom.maintenance_accordian_heading1 !=blank %}
+			<div id="tab-5" class="tab-pane">
+				<span class="glyphicon glyphicon-tint glyphicon--home--feature two columns text-center"></span>
+					{% render 'maintenance_accordian' %}
+			</div>
+            {% endif %}
+            
+		</div>
+	</section>
+</div>
+<script>
+window.addEventListener("load", function() {
+	// store tabs variable
+	var myTabs = document.querySelectorAll("ul.nav-tabs > li");
+  function myTabClicks(tabClickEvent) {
+		for (var i = 0; i < myTabs.length; i++) {
+			myTabs[i].classList.remove("active");
+		}
+		var clickedTab = tabClickEvent.currentTarget;
+		clickedTab.classList.add("active");
+		tabClickEvent.preventDefault();
+		var myContentPanes = document.querySelectorAll(".tab-pane");
+		for (i = 0; i < myContentPanes.length; i++) {
+			myContentPanes[i].classList.remove("active");
+		}
+		var anchorReference = tabClickEvent.target;
+		var activePaneId = anchorReference.getAttribute("href");
+		var activePane = document.querySelector(activePaneId);
+		activePane.classList.add("active");
+	}
+	for (i = 0; i < myTabs.length; i++) {
+		myTabs[i].addEventListener("click", myTabClicks)
+	}
+});
+
+
+
+function initAcc(elem, option){
+    document.addEventListener('click', function (e) {
+        if (!e.target.matches(elem+' .a-btn')) return;
+        else{
+            if(!e.target.parentElement.classList.contains('active')){
+                if(option==true){
+                    var elementList = document.querySelectorAll(elem+' .a-container');
+                    Array.prototype.forEach.call(elementList, function (e) {
+                        e.classList.remove('active');
+                    });
+                }            
+                e.target.parentElement.classList.add('active');
+            }else{
+                e.target.parentElement.classList.remove('active');
+            }
+        }
+    });
+}
+
+initAcc('.ta_accordion.v1', true);
+initAcc('.ta_accordion.v2', false);
+</script>
+ 
+
+
+
+
+{% schema %} 
+{
+    "name": "RCA Tabs And Accordian",
+    "class": "rca-tabs-and-accordian",
+    "settings": [
+        {
+			"type": "text",
+			"id": "stitle",
+			"label": "Sub Title"
+		}
+    ],
+    "blocks": [
+    {
+        "type": "text",
+        "name": "Tab Name",
+        "settings": [
+           {
+            "type": "header",
+            "content": "Add Tab Data"
+            },
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Tab Name"
+            }
+          ]
+    }
+  ],
+    "presets": [
+        {
+            "name": "RCA Tabs And Accordian"
+        }
+    ]
+}
+{% endschema %}

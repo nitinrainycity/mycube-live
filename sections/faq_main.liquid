@@ -1,0 +1,102 @@
+
+<section>
+	<div class="rca_faq_main">
+		<div class="rca_faq_container">
+			<div class="rca_faq_data">
+                <div class="rca_faq_details">
+                    {% for block in section.blocks %}
+                    <div class="rca_faq_row">
+                        <button class="rca_faq_button">
+                            {{ block.settings.title  }}
+                            <span></span>
+                        </button>
+                        <div class="accordion-content">
+                            {{ block.settings.content  }}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+			</div> 
+		</div>
+	</div>
+</section>
+{{ 'faq_page.css' | asset_url | stylesheet_tag }}
+{% style %}
+    #shopify-section-{{ section.id }}{
+        padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+        padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    }
+
+    @media screen and (min-width: 750px) {
+        #shopify-section-{{ section.id }}{
+            padding-top: {{ section.settings.padding_top }}px;
+            padding-bottom: {{ section.settings.padding_bottom }}px;
+        }
+    }
+{% endstyle %}
+<script src="{{ 'faqpage.js' | asset_url }}" defer="defer"></script>
+{% schema %}
+{
+    "name": "RCA Faq",
+    "class": "rca_faq",
+    "settings": [
+        {
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+		},
+        {
+			"type": "text",
+			"id": "content",
+			"label": "Content"
+		},
+        {
+            "type": "range",
+            "id": "padding_top",
+            "min": 0,
+            "max": 200,
+            "step": 10,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_top",
+            "default": 0
+        },
+        {
+            "type": "range",
+            "id": "padding_bottom",
+            "min": 0,
+            "max": 200,
+            "step": 10,
+            "unit": "px",
+            "label": "t:sections.all.padding.padding_bottom",
+            "default": 0
+        }
+    ],
+    "blocks": [
+    {
+        "type": "text",
+        "name": "Content",
+        "settings": [
+            {
+            "type": "header",
+            "content": "Add New"
+            },
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title"
+            },
+			{
+                "type": "richtext",
+                "id": "content",
+                "label": "Content"
+            }
+        ]
+    }
+  ],
+    "presets": [
+        {
+            "name": "RCA Faq"
+        }
+    ]
+}
+{% endschema %}

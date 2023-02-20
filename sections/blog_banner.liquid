@@ -1,0 +1,87 @@
+{{ 'blog_banner.css' | asset_url | stylesheet_tag }}
+<section class="blog_banner">
+    <div class="blog_banner_container">
+        {%- if section.settings.image != blank -%}
+            <div class="blog_bimage sp_desktop">
+                <img src ="{{ section.settings.image | img_url :'master' }}" alt="{% if block.settings.image.alt != blank %}{{ block.settings.image.alt }}{% else %}mycube-safe{% endif %}">
+            </div>
+        {%- endif -%}
+        {%- if section.settings.mobimage != blank -%}
+            <div class="blog_bimage sp_mobile">
+                <img src ="{{ section.settings.mobimage | img_url :'master' }}" alt="{% if block.settings.mobimage.alt != blank %}{{ block.settings.mobimage.alt }}{% else %}mycube-safe{% endif %}">
+            </div>
+        {%- endif -%}
+        {%- if section.settings.heading != blank -%}
+            <div class="blogbanner_text">
+                <h3 style="color:{{ section.settings.color_heading }}">{{ section.settings.heading }}</h3>
+            </div>
+        {%- endif -%}
+        <div class="categories_button_group">
+            <div class="cbg_flex">
+            
+            {% assign current_url = canonical_url %}
+            {% assign current_url = current_url | replace: "{{shop.url}}", "" %}
+            
+                {% for block in section.blocks %}  
+                {% if block.settings.btn-name !=blank %}
+                <a {% if current_url contains block.settings.btn-link %} class="active"{% endif %} href="{{ block.settings.btn-link }}">
+                   {{ block.settings.btn-name }}
+                </a>
+                {% endif %}
+                {% endfor %}
+            </div<
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+  "name": "Blog Banner",
+  "class": "section blog_banner",
+  "settings": [
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+    },
+    {
+        "type": "image_picker",
+        "id": "mobimage",
+        "label": "Mobile Image"
+    },
+    {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+    },
+    {
+      "type": "color",
+      "id": "color_heading",
+      "label": "Heading Color",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Tab Button",
+      "settings": [
+        {
+          "id": "btn-name",
+          "type": "text",
+          "label": "Button Text"
+        },
+        {
+          "id": "btn-link",
+          "type": "url",
+          "label": "Button Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog Banner"
+    }
+  ]
+}
+{% endschema %}

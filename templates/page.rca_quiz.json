@@ -1,0 +1,75 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "21b5188f-7991-4cf8-bca3-4b05ac5af9af": {
+      "type": "rca_quiz",
+      "blocks": {
+        "325d085b-e12c-469c-a97c-c9c83939ca71": {
+          "type": "first_data",
+          "settings": {
+            "tophead": "What is most important to you in a safe?",
+            "image1": "https:\/\/d365rsaepqsecj.cloudfront.net\/MC_Quiz_Icons_03_3290772bc0.svg",
+            "heading1": "Fire",
+            "content1": "Certified fire protection",
+            "image2": "https:\/\/d365rsaepqsecj.cloudfront.net\/MC_Quiz_Icons_01_d8a3ed39d5.svg",
+            "heading2": "Security",
+            "content2": "Tried and true protection",
+            "image3": "https:\/\/d365rsaepqsecj.cloudfront.net\/MC_Quiz_Icons_02_e52227d232.svg",
+            "heading3": "Technology",
+            "content3": "Control with your smartphone"
+          }
+        },
+        "3703c64f-fd41-4fc3-a371-cd8639bb6510": {
+          "type": "button_data",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/07_MyCubeWhiteClassic_022_72dpi_1200x_848d0bf4-90f0-4ffe-a6f5-dfa705e47f6e.webp",
+            "heading1": "Mycube Classic",
+            "image2": "shopify:\/\/shop_images\/08_MyCubeWhiteMini_001_72dpi_1200x_9801a2fd-8f94-482e-b600-5933ca6b4a66.webp",
+            "heading2": "Mycube Mini",
+            "image3": "shopify:\/\/shop_images\/MC_Wallsafe_Feat_e771c8491f.webp",
+            "heading3": "Wall Safe"
+          }
+        },
+        "abffd71f-b76c-49f5-aa87-35bf87c0cb5f": {
+          "type": "self_data",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/13_BiocubeWhiteClassic_006_1200x_58889cc1-352e-476f-8574-ae563362c53f.webp",
+            "heading1": "Biocube",
+            "image2": "shopify:\/\/shop_images\/14_BiocubeWhiteMini_040_72dpi_1200x_b610b6f5-a227-4d93-ac86-49723c30d443.webp",
+            "heading2": "Biocube Mini",
+            "image3": "shopify:\/\/shop_images\/Biocube_Plus_Still_01-1_1_1200x_e3b700f0-5865-44ef-b985-75a52a898aad.webp",
+            "heading3": "Biocube Plus"
+          }
+        }
+      },
+      "block_order": [
+        "325d085b-e12c-469c-a97c-c9c83939ca71",
+        "3703c64f-fd41-4fc3-a371-cd8639bb6510",
+        "abffd71f-b76c-49f5-aa87-35bf87c0cb5f"
+      ],
+      "settings": {
+        "fire_product": "mycube-fire-1",
+        "tech_product": "icube",
+        "drawer_product": "biocube-in-drawer",
+        "lock_product": "biocube-professional",
+        "product1": "mycube",
+        "product2": "mycube-mini",
+        "product3": "wall-safe",
+        "sproduct1": "biocube-classic",
+        "sproduct2": "biocube-mini",
+        "sproduct3": "biocube-plus"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "21b5188f-7991-4cf8-bca3-4b05ac5af9af"
+  ]
+}
